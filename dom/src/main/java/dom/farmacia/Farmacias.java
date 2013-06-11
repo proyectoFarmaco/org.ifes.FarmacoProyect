@@ -1,5 +1,7 @@
 package dom.farmacia;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 
@@ -51,6 +53,24 @@ public class Farmacias extends AbstractFactoryAndRepository{
 		listDro.add(dro);
 		farmaci.setDroguerias(listDro);
 		
+		//agregando una lista de movimientos
+		ArrayList<Movimientos> listaMovi = new ArrayList<Movimientos>();
+		//creando una drogueria para asignar a la lista
+				Movimientos mov = new Movimientos();
+				mov.setConcepMovimiento("debe");
+				SimpleDateFormat formatoDeFecha = new SimpleDateFormat("dd/MM/yyyy");
+				
+				try {
+					mov.setFechaMovimiento(formatoDeFecha.parse("22/5/2011"));
+				} catch (ParseException e) {
+					// TODO Bloque catch generado automáticamente
+					e.printStackTrace();
+				}
+				mov.setMontoMovimiento(50);
+				mov.setNumMovimiento(12);
+		//asignando un movimiento a la lista de movimientos
+				listaMovi.add(mov);
+				farmaci.setMovimientos(listaMovi);
 		
 		listFarm.add(farmaci);
 		Farmacia farmaci2 = new Farmacia();
@@ -61,9 +81,10 @@ public class Farmacias extends AbstractFactoryAndRepository{
 		farmaci2.setIngBrutos("si");
 		farmaci2.setNombre("la estrella");
 		farmaci2.setSaldo(15);
-		farmaci2.setTitular("pablo 10");
+		farmaci2.setTitular("pablo V");
 		farmaci2.setDroguerias(listDro);//agrego la misma drogueria
-		listFarm.add(farmaci);
+		farmaci2.setMovimientos(listaMovi);//agrego los mismos movimientos
+		listFarm.add(farmaci2);
 		
 		return listFarm;
 	}
