@@ -1,6 +1,8 @@
 package dom.farmacia;
 
 import java.util.ArrayList;
+
+
 import java.util.List;
 
 import org.apache.isis.applib.AbstractFactoryAndRepository;
@@ -16,10 +18,11 @@ public class Farmacias extends AbstractFactoryAndRepository{
 	}
 	
 	/**
-	 * metodo que trae las farmacias con sus emails
+	 * metodo que trae las farmacias de ejemplo
 	 * TODO persistencia
 	 * @return lista de farmacias
 	 */
+
 	public List<Farmacia> consultaFarmacias()
 	{
 		/**
@@ -36,6 +39,12 @@ public class Farmacias extends AbstractFactoryAndRepository{
 		farmaci.setNombre("farmacity");
 		farmaci.setSaldo(15);
 		farmaci.setTitular("pedro 10");
+		Movimientos movi = new Movimientos();
+		movi.setNumMovimiento(1);
+		movi.setMontoMovimiento(12);
+		movi.setConcepMovimiento("debe");
+		
+		
 		listFarm.add(farmaci);
 		Farmacia farmaci2 = new Farmacia();
 		farmaci2.setCodfarmacia(2);
@@ -49,4 +58,5 @@ public class Farmacias extends AbstractFactoryAndRepository{
 		listFarm.add(farmaci);
 		return listFarm;
 	}
+
 }

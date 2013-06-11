@@ -2,6 +2,7 @@ package dom.farmacia;
 
 
 
+
 public class Farmacia {
     private int codfarmacia; 
     private String nombre;
@@ -11,6 +12,7 @@ public class Farmacia {
     private String IngBrutos;
     private String condIva;
     private float saldo;
+    
 	public int getCodfarmacia() {
 		return codfarmacia;
 	}
@@ -63,4 +65,5 @@ public class Farmacia {
 	{
 		return this.nombre;
 	}
+	
 }

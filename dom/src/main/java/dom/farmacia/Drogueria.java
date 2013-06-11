@@ -2,26 +2,31 @@ package dom.farmacia;
 
 public class Drogueria {
 
-	private String Nombre;;
-	private String Direccion;
+	private String nombre;;
+	private String direccion;
 	private String codigoPostal;
+	
 	public String getNombre() {
-		return Nombre;
+		return nombre;
 	}
 	public void setNombre(String nombre) {
-		Nombre = nombre;
+		this.nombre = nombre;
 	}
 	public String getDireccion() {
-		return Direccion;
+		return direccion;
 	}
 	public void setDireccion(String direccion) {
-		Direccion = direccion;
+		this.direccion = direccion;
 	}
 	public String getCodigoPostal() {
 		return codigoPostal;
 	}
 	public void setCodigoPostal(String codigoPostal) {
 		this.codigoPostal = codigoPostal;
+	}
+	public String title()
+	{
+		return this.nombre;
 	}
 
 }
