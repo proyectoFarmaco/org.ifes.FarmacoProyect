@@ -59,5 +59,8 @@ public class Farmacia {
 	public void setSaldo(float saldo) {
 		this.saldo = saldo;
 	}
-	
+	public String title()
+	{
+		return this.nombre;
+	}
 }
