@@ -1,5 +1,7 @@
 package dom.farmacia;
 
+import java.util.List;
+
 
 
 
@@ -12,7 +14,13 @@ public class Farmacia {
     private String IngBrutos;
     private String condIva;
     private float saldo;
-    
+    private List<Drogueria> droguerias;
+	public List<Drogueria> getDroguerias() {
+		return droguerias;
+	}
+	public void setDroguerias(List<Drogueria> droguerias) {
+		this.droguerias = droguerias;
+	}
 	public int getCodfarmacia() {
 		return codfarmacia;
 	}

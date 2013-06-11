@@ -39,10 +39,17 @@ public class Farmacias extends AbstractFactoryAndRepository{
 		farmaci.setNombre("farmacity");
 		farmaci.setSaldo(15);
 		farmaci.setTitular("pedro 10");
-		Movimientos movi = new Movimientos();
-		movi.setNumMovimiento(1);
-		movi.setMontoMovimiento(12);
-		movi.setConcepMovimiento("debe");
+		
+		//agregando una lista de droguerias
+		ArrayList<Drogueria> listDro = new ArrayList<Drogueria>();
+		//creando una drogueria para asignar a la lista
+		Drogueria dro = new Drogueria();
+		dro.setCodigoPostal("8324");
+		dro.setDireccion("peru 41");
+		dro.setNombre("Agarol");
+		//asignando una drogueria a la lista de droguerias
+		listDro.add(dro);
+		farmaci.setDroguerias(listDro);
 		
 		
 		listFarm.add(farmaci);
@@ -55,7 +62,9 @@ public class Farmacias extends AbstractFactoryAndRepository{
 		farmaci2.setNombre("la estrella");
 		farmaci2.setSaldo(15);
 		farmaci2.setTitular("pablo 10");
+		farmaci2.setDroguerias(listDro);//agrego la misma drogueria
 		listFarm.add(farmaci);
+		
 		return listFarm;
 	}
 
