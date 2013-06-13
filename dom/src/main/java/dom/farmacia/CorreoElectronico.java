@@ -1,5 +1,11 @@
 package dom.farmacia;
 
+import javax.jdo.annotations.IdentityType;
+
+import org.apache.isis.applib.annotation.ObjectType;
+
+@javax.jdo.annotations.PersistenceCapable(identityType=IdentityType.DATASTORE)
+@ObjectType("CorreoElectronico")
 public class CorreoElectronico {
 
 	private String descripcion;
