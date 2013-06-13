@@ -144,11 +144,16 @@
           JDBC drivers 
           (for jdo objectstore)
           -->
-        <dependency>
+        <!--  <dependency>
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
-        </dependency>
+        </dependency> -->
 
+         <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.1-901.jdbc4</version>
+        </dependency>
         <!-- 
         <dependency>
             <groupId>com.microsoft.sqlserver</groupId>
