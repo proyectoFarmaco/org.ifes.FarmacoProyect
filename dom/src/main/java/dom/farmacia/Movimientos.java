@@ -4,12 +4,27 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import javax.jdo.annotations.IdentityType;
+
+import org.apache.isis.applib.annotation.ObjectType;
+
+
+
+@javax.jdo.annotations.PersistenceCapable(identityType=IdentityType.DATASTORE)
+@ObjectType("Movimientos")
 public class Movimientos {
 
 	private int numMovimiento;
 	private Date fechaMovimiento;
 	private String concepMovimiento;
 	private float montoMovimiento;
+	private TipoMovimiento tipoMovimiento;
+	public TipoMovimiento getTipoMovimiento() {
+		return tipoMovimiento;
+	}
+	public void setTipoMovimiento(TipoMovimiento tipoMovimiento) {
+		this.tipoMovimiento = tipoMovimiento;
+	}
 	public int getNumMovimiento() {
 		return numMovimiento;
 	}
