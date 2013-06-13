@@ -21,6 +21,22 @@ public class Farmacia {
     private float saldo;
     private List<Drogueria> droguerias;
     private List<Movimientos> movimientos;
+    private List<Telefono> telefono;
+    private List<CorreoElectronico> listaCorreoElectronico;
+    
+	public List<CorreoElectronico> getListaCorreoElectronico() {
+		return listaCorreoElectronico;
+	}
+	public void setListaCorreoElectronico(
+			List<CorreoElectronico> listaCorreoElectronico) {
+		this.listaCorreoElectronico = listaCorreoElectronico;
+	}
+	public List<Telefono> getTelefono() {
+		return telefono;
+	}
+	public void setTelefono(List<Telefono> telefono) {
+		this.telefono = telefono;
+	}
 	public List<Movimientos> getMovimientos() {
 		return movimientos;
 	}
