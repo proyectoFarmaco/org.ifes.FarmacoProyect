@@ -3,8 +3,13 @@ package dom.farmacia;
 import java.util.List;
 
 
+import javax.jdo.annotations.IdentityType;
+import org.apache.isis.applib.annotation.AutoComplete;
+import org.apache.isis.applib.annotation.ObjectType;
 
-
+@javax.jdo.annotations.PersistenceCapable(identityType=IdentityType.DATASTORE)
+@ObjectType("Farmacia")
+@AutoComplete(repository=Farmacias.class, action="autoComplete")
 public class Farmacia {
     private int codfarmacia; 
     private String nombre;

@@ -10,6 +10,7 @@ import java.util.List;
 import org.apache.isis.applib.AbstractFactoryAndRepository;
 import org.apache.isis.applib.annotation.Named;
 
+
 @Named ("farmacias")
 public class Farmacias extends AbstractFactoryAndRepository{
 
