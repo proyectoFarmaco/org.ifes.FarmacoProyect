@@ -24,7 +24,7 @@ public class Farmacia {
     private String condIva;
     private float saldo;
     private List<Drogueria> droguerias;
-    private List<Movimientos> movimientos;
+    private List<Movimiento> movimientos;
     private List<Telefono> telefono;
     private List<CorreoElectronico> listaCorreoElectronico;
     
@@ -41,10 +41,10 @@ public class Farmacia {
 	public void setTelefono(List<Telefono> telefono) {
 		this.telefono = telefono;
 	}
-	public List<Movimientos> getMovimientos() {
+	public List<Movimiento> getMovimientos() {
 		return movimientos;
 	}
-	public void setMovimientos(List<Movimientos> movimientos) {
+	public void setMovimientos(List<Movimiento> movimientos) {
 		this.movimientos = movimientos;
 	}
 	public List<Drogueria> getDroguerias() {

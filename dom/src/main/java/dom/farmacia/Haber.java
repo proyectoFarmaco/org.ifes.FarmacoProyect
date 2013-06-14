@@ -2,7 +2,7 @@ package dom.farmacia;
 
 import java.text.SimpleDateFormat;
 
-public class Haber extends Movimientos{
+public class Haber extends Movimiento{
 
 	@Override
 	public String title()

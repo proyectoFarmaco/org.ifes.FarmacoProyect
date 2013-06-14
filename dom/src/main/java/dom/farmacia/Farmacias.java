@@ -55,9 +55,9 @@ public class Farmacias extends AbstractFactoryAndRepository{
 		farmaci.setDroguerias(listDro);
 		
 		//agregando una lista de movimientos
-		ArrayList<Movimientos> listaMovi = new ArrayList<Movimientos>();
+		ArrayList<Movimiento> listaMovi = new ArrayList<Movimiento>();
 		//creando una drogueria para asignar a la lista
-				Movimientos mov = new Movimientos();
+				Movimiento mov = new Movimiento();
 				mov.setConcepMovimiento("debe");
 				SimpleDateFormat formatoDeFecha = new SimpleDateFormat("dd/MM/yyyy");
 				

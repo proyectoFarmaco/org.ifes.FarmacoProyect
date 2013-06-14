@@ -12,7 +12,7 @@ import org.apache.isis.applib.annotation.ObjectType;
 
 @javax.jdo.annotations.PersistenceCapable(identityType=IdentityType.DATASTORE)
 @ObjectType("Movimientos")
-public class Movimientos {
+public class Movimiento {
 
 	private int numMovimiento;
 	private Date fechaMovimiento;
@@ -38,7 +38,7 @@ public class Movimientos {
 	public void setFechaMovimiento(Date fechaMovimiento) {
 		this.fechaMovimiento = fechaMovimiento;
 	}
-	public Movimientos() {
+	public Movimiento() {
 		super();
 		this.numMovimiento = 1;
 		SimpleDateFormat formatoDeFecha = new SimpleDateFormat("dd/MM/yyyy");
