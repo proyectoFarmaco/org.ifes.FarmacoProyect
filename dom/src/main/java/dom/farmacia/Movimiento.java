@@ -4,16 +4,19 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import javax.jdo.annotations.IdentityType;
+
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.PrimaryKey;
 
 import org.apache.isis.applib.annotation.ObjectType;
 
 
 
-@javax.jdo.annotations.PersistenceCapable(identityType=IdentityType.DATASTORE)
+@PersistenceCapable
 @ObjectType("Movimientos")
 public class Movimiento {
 
+	@PrimaryKey
 	private int numMovimiento;
 	private Date fechaMovimiento;
 	private String concepMovimiento;
