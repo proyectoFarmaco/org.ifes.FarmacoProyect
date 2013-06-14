@@ -4,13 +4,17 @@ import java.util.List;
 
 
 import javax.jdo.annotations.IdentityType;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.PrimaryKey;
+
 import org.apache.isis.applib.annotation.AutoComplete;
 import org.apache.isis.applib.annotation.ObjectType;
 
-@javax.jdo.annotations.PersistenceCapable(identityType=IdentityType.DATASTORE)
+@PersistenceCapable
 @ObjectType("Farmacia")
 @AutoComplete(repository=Farmacias.class, action="autoComplete")
 public class Farmacia {
+	@PrimaryKey
     private int codfarmacia; 
     private String nombre;
     private String direccion;
