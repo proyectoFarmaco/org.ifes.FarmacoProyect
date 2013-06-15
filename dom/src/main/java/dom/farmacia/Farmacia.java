@@ -2,20 +2,30 @@ package dom.farmacia;
 
 import java.util.List;
 
-
-import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.PrimaryKey;
 
+import org.apache.isis.applib.DomainObjectContainer;
 import org.apache.isis.applib.annotation.AutoComplete;
+import org.apache.isis.applib.annotation.Hidden;
 import org.apache.isis.applib.annotation.ObjectType;
+import org.apache.isis.applib.annotation.Optional;
+import org.apache.isis.applib.filter.Filter;
+
+import com.google.common.base.Objects;
 
 @PersistenceCapable
 @ObjectType("Farmacia")
 @AutoComplete(repository=Farmacias.class, action="autoComplete")
+@javax.jdo.annotations.Queries({
+	@javax.jdo.annotations.Query(
+            name="todo_all", language="JDOQL",  
+            value="SELECT FROM dom.farmacia.Farmacia"
+			)
+})
 public class Farmacia {
 	@PrimaryKey
-    private int codfarmacia; 
+    private int codFarmacia; 
     private String nombre;
     private String direccion;
     private String titular;
@@ -28,6 +38,7 @@ public class Farmacia {
     private List<Telefono> telefono;
     private List<CorreoElectronico> listaCorreoElectronico;
     
+    @Optional    
 	public List<CorreoElectronico> getListaCorreoElectronico() {
 		return listaCorreoElectronico;
 	}
@@ -35,12 +46,14 @@ public class Farmacia {
 			List<CorreoElectronico> listaCorreoElectronico) {
 		this.listaCorreoElectronico = listaCorreoElectronico;
 	}
+	@Optional
 	public List<Telefono> getTelefono() {
 		return telefono;
 	}
 	public void setTelefono(List<Telefono> telefono) {
 		this.telefono = telefono;
 	}
+	@Optional
 	public List<Movimiento> getMovimientos() {
 		return movimientos;
 	}
@@ -54,10 +67,10 @@ public class Farmacia {
 		this.droguerias = droguerias;
 	}
 	public int getCodfarmacia() {
-		return codfarmacia;
+		return codFarmacia;
 	}
-	public void setCodfarmacia(int codfarmacia) {
-		this.codfarmacia = codfarmacia;
+	public void setCodfarmacia(int codFarmacia) {
+		this.codFarmacia = codFarmacia;
 	}
 	public String getNombre() {
 		return nombre;
@@ -105,5 +118,32 @@ public class Farmacia {
 	{
 		return this.nombre;
 	}
+	private String ownedBy;
+	
+	public static Filter<Farmacia> thoseOwnedBy(final String currentUser) {
+		        return new Filter<Farmacia>() {
+		            @Override
+		            public boolean accept(final Farmacia farmacia) {
+		                return Objects.equal(farmacia.getOwnedBy(), currentUser);
+		            }
+		
+		        };
+		    }
+	@Hidden
+	public String getOwnedBy() {
+		return ownedBy;
+	}
+	public void setOwnedBy(String ownedBy) {
+		this.ownedBy = ownedBy;
+	}
+	
+	@SuppressWarnings("unused")
+    private DomainObjectContainer container;
+
+    public void setDomainObjectContainer(final DomainObjectContainer container) {
+        this.container = container;
+    }
+
+	
 	
 }
