@@ -21,6 +21,7 @@ package fixture.todo;
 
 import java.util.List;
 
+import org.apache.isis.applib.annotation.Hidden;
 import org.apache.isis.applib.clock.Clock;
 import org.apache.isis.applib.fixtures.AbstractFixture;
 import org.joda.time.LocalDate;
@@ -30,6 +31,7 @@ import dom.todo.ToDoItem.Category;
 import dom.todo.ToDoItems;
 
 public class ToDoItemsFixture extends AbstractFixture {
+
 
     @Override
     public void install() {
@@ -44,7 +46,6 @@ public class ToDoItemsFixture extends AbstractFixture {
 
         getContainer().flush();
     }
-
     public void installFor(String user) {
 
         removeAllToDosFor(user);
@@ -59,6 +60,7 @@ public class ToDoItemsFixture extends AbstractFixture {
     }
 
     // {{ helpers
+	
     private void removeAllToDosForCurrentUser() {
         
         final List<ToDoItem> allToDos = toDoItems.allToDos();
@@ -66,18 +68,18 @@ public class ToDoItemsFixture extends AbstractFixture {
             getContainer().remove(toDoItem);
         }
     }
-
+	
     private void removeAllToDosFor(String user) {
         final List<ToDoItem> items = allMatches(ToDoItem.class, ToDoItem.thoseOwnedBy(user));
         for (final ToDoItem toDoItem : items) {
             getContainer().remove(toDoItem);
         }
     }
-
+	
     private ToDoItem createToDoItemForCurrentUser(final String description, final Category category, final LocalDate dueBy) {
         return toDoItems.newToDo(description, category, dueBy);
     }
-
+	
     private ToDoItem createToDoItemForUser(final String description, final Category category, String user, final LocalDate dueBy) {
         return toDoItems.newToDo(description, category, user, dueBy);
     }
