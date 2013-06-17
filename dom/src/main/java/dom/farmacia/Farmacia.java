@@ -118,24 +118,16 @@ public class Farmacia {
 	{
 		return this.nombre;
 	}
-	private String ownedBy;
 	
 	public static Filter<Farmacia> thoseOwnedBy(final String currentUser) {
 		        return new Filter<Farmacia>() {
 		            @Override
 		            public boolean accept(final Farmacia farmacia) {
-		                return Objects.equal(farmacia.getOwnedBy(), currentUser);
+		                return Objects.equal("sven", currentUser);
 		            }
 		
 		        };
 		    }
-	@Hidden
-	public String getOwnedBy() {
-		return ownedBy;
-	}
-	public void setOwnedBy(String ownedBy) {
-		this.ownedBy = ownedBy;
-	}
 	
 	@SuppressWarnings("unused")
     private DomainObjectContainer container;
