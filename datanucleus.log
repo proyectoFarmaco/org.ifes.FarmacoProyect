@@ -3971,3 +3971,850 @@
 19:09:45,301 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/home/mati89/workspace/org.ifes.FarmacoProyect/dom/target/classes/dom/todo/ToDoItem.class" with enhanced definition
 19:09:45,302 (main) DEBUG [DataNucleus.Enhancer] - Enhance of class "dom.todo.ToDoItem" completed
 19:09:45,302 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=387 ms, enhance=119 ms, total=506 ms. Consult the log for full details
+01:04:08,670 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+01:04:08,737 (main) DEBUG [DataNucleus.Plugin] - Plugin Registry "org.datanucleus.plugin.EclipsePluginRegistry" no existe. Usando registry de DataNucleus. Reason : ï¿½La clase org.eclipse.core.runtime.RegistryFactory no esta en el CLASSPATH!. Por favor compruebe la especificaciï¿½n y el CLASSPATH..
+01:04:08,738 (main) DEBUG [DataNucleus.Plugin] - Using PluginRegistry org.datanucleus.plugin.NonManagedPluginRegistry
+01:04:08,764 (main) DEBUG [DataNucleus.Plugin] - Registering bundle org.datanucleus.enhancer version 3.1.1 at URL file:/home/mati89/.m2/repository/org/datanucleus/datanucleus-enhancer/3.1.1/datanucleus-enhancer-3.1.1.jar.
+01:04:08,774 (main) DEBUG [DataNucleus.Plugin] - Loading extension points from plug-in file jar:file:/home/mati89/.m2/repository/org/datanucleus/datanucleus-enhancer/3.1.1/datanucleus-enhancer-3.1.1.jar!/plugin.xml.
+01:04:08,777 (main) DEBUG [DataNucleus.Plugin] - Loading extensions from plug-in file jar:file:/home/mati89/.m2/repository/org/datanucleus/datanucleus-enhancer/3.1.1/datanucleus-enhancer-3.1.1.jar!/plugin.xml.
+01:04:08,778 (main) DEBUG [DataNucleus.Plugin] - Registering bundle org.datanucleus version 3.1.5 at URL file:/home/mati89/.m2/repository/org/datanucleus/datanucleus-core/3.1.5/datanucleus-core-3.1.5.jar.
+01:04:08,808 (main) DEBUG [DataNucleus.Plugin] - Loading extension points from plug-in file jar:file:/home/mati89/.m2/repository/org/datanucleus/datanucleus-core/3.1.5/datanucleus-core-3.1.5.jar!/plugin.xml.
+01:04:08,842 (main) DEBUG [DataNucleus.Plugin] - Loading extensions from plug-in file jar:file:/home/mati89/.m2/repository/org/datanucleus/datanucleus-core/3.1.5/datanucleus-core-3.1.5.jar!/plugin.xml.
+01:04:08,849 (main) DEBUG [DataNucleus.Plugin] - Registering bundle org.datanucleus.store.types.jodatime version 3.1.1 at URL file:/home/mati89/.m2/repository/org/datanucleus/datanucleus-jodatime/3.1.1/datanucleus-jodatime-3.1.1.jar.
+01:04:08,852 (main) DEBUG [DataNucleus.Plugin] - Loading extension points from plug-in file jar:file:/home/mati89/.m2/repository/org/datanucleus/datanucleus-jodatime/3.1.1/datanucleus-jodatime-3.1.1.jar!/plugin.xml.
+01:04:08,853 (main) DEBUG [DataNucleus.Plugin] - Loading extensions from plug-in file jar:file:/home/mati89/.m2/repository/org/datanucleus/datanucleus-jodatime/3.1.1/datanucleus-jodatime-3.1.1.jar!/plugin.xml.
+01:04:08,855 (main) DEBUG [DataNucleus.Plugin] - Registering bundle org.datanucleus.api.jdo version 3.1.3 at URL file:/home/mati89/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.1.3/datanucleus-api-jdo-3.1.3.jar.
+01:04:08,860 (main) DEBUG [DataNucleus.Plugin] - Loading extension points from plug-in file jar:file:/home/mati89/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.1.3/datanucleus-api-jdo-3.1.3.jar!/plugin.xml.
+01:04:08,862 (main) DEBUG [DataNucleus.Plugin] - Loading extensions from plug-in file jar:file:/home/mati89/.m2/repository/org/datanucleus/datanucleus-api-jdo/3.1.3/datanucleus-api-jdo-3.1.3.jar!/plugin.xml.
+01:04:08,864 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.store.rdbms.sql_expression" not registered, but plugin "org.datanucleus.store.types.jodatime" defined in file:/home/mati89/.m2/repository/org/datanucleus/datanucleus-jodatime/3.1.1/datanucleus-jodatime-3.1.1.jar refers to it.
+01:04:08,864 (main) WARN  [DataNucleus.Plugin] - Extension Point "org.datanucleus.store.rdbms.sql_method" not registered, but plugin "org.datanucleus.store.types.jodatime" defined in file:/home/mati89/.m2/repository/org/datanucleus/datanucleus-jodatime/3.1.1/datanucleus-jodatime-3.1.1.jar refers to it.
+01:04:08,911 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+01:04:08,911 (main) DEBUG [DataNucleus.Enhancer] - DataNucleus Enhancer : Classpath
+01:04:08,911 (main) DEBUG [DataNucleus.Enhancer] - >>  /opt/apache-maven-2.0.11/boot/classworlds-1.1.jar
+01:04:08,948 (main) DEBUG [DataNucleus.Persistence] - Tipos de Java inicializando ...
+01:04:08,949 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java boolean (persistent=true, DFG=true, embedded=true)
+01:04:08,949 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java byte (persistent=true, DFG=true, embedded=true)
+01:04:08,949 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java char (persistent=true, DFG=true, embedded=true)
+01:04:08,949 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java double (persistent=true, DFG=true, embedded=true)
+01:04:08,950 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java float (persistent=true, DFG=true, embedded=true)
+01:04:08,950 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java int (persistent=true, DFG=true, embedded=true)
+01:04:08,950 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java long (persistent=true, DFG=true, embedded=true)
+01:04:08,950 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java short (persistent=true, DFG=true, embedded=true)
+01:04:08,950 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.lang.Boolean (persistent=true, DFG=true, embedded=true)
+01:04:08,950 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.lang.Byte (persistent=true, DFG=true, embedded=true)
+01:04:08,950 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.lang.Character (persistent=true, DFG=true, embedded=true)
+01:04:08,950 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.lang.Double (persistent=true, DFG=true, embedded=true)
+01:04:08,950 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.lang.Float (persistent=true, DFG=true, embedded=true)
+01:04:08,950 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.lang.Integer (persistent=true, DFG=true, embedded=true)
+01:04:08,950 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.lang.Long (persistent=true, DFG=true, embedded=true)
+01:04:08,950 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.lang.Short (persistent=true, DFG=true, embedded=true)
+01:04:08,950 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.lang.Number (persistent=true, DFG=true, embedded=true)
+01:04:08,951 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.lang.String (persistent=true, DFG=true, embedded=true)
+01:04:08,951 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.lang.StringBuffer (persistent=false, DFG=false, embedded=true)
+01:04:08,951 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.lang.Enum (persistent=true, DFG=true, embedded=true)
+01:04:08,951 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.lang.Class (persistent=false, DFG=false, embedded=true)
+01:04:08,989 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.awt.image.BufferedImage (persistent=false, DFG=false, embedded=true)
+01:04:08,996 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.awt.Color (persistent=false, DFG=false, embedded=true)
+01:04:08,996 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.math.BigDecimal (persistent=true, DFG=true, embedded=true)
+01:04:08,996 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.math.BigInteger (persistent=true, DFG=true, embedded=true)
+01:04:08,997 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.net.URL (persistent=false, DFG=false, embedded=true)
+01:04:08,997 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.net.URI (persistent=false, DFG=false, embedded=true)
+01:04:09,014 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.sql.Date (persistent=false, DFG=false, embedded=false)
+01:04:09,015 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.sql.Time (persistent=false, DFG=false, embedded=false)
+01:04:09,016 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.sql.Timestamp (persistent=false, DFG=false, embedded=false)
+01:04:09,016 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.Date (persistent=true, DFG=true, embedded=true)
+01:04:09,016 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.Locale (persistent=true, DFG=false, embedded=true)
+01:04:09,016 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.Currency (persistent=true, DFG=false, embedded=true)
+01:04:09,017 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.Calendar (persistent=false, DFG=false, embedded=false)
+01:04:09,017 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.GregorianCalendar (persistent=false, DFG=false, embedded=false)
+01:04:09,017 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.UUID (persistent=false, DFG=false, embedded=false)
+01:04:09,018 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.TimeZone (persistent=false, DFG=false, embedded=false)
+01:04:09,024 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.ArrayList (persistent=true, DFG=false, embedded=false)
+01:04:09,024 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.Arrays$ArrayList (persistent=true, DFG=false, embedded=false)
+01:04:09,025 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.BitSet (persistent=false, DFG=false, embedded=false)
+01:04:09,026 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.Collection (persistent=true, DFG=false, embedded=false)
+01:04:09,029 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.HashMap (persistent=true, DFG=false, embedded=false)
+01:04:09,031 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.HashSet (persistent=true, DFG=false, embedded=false)
+01:04:09,032 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.Hashtable (persistent=true, DFG=false, embedded=false)
+01:04:09,033 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.LinkedHashMap (persistent=true, DFG=false, embedded=false)
+01:04:09,034 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.LinkedHashSet (persistent=true, DFG=false, embedded=false)
+01:04:09,036 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.LinkedList (persistent=true, DFG=false, embedded=false)
+01:04:09,038 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.List (persistent=true, DFG=false, embedded=false)
+01:04:09,039 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.Map (persistent=true, DFG=false, embedded=false)
+01:04:09,040 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.PriorityQueue (persistent=false, DFG=false, embedded=false)
+01:04:09,042 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.Properties (persistent=false, DFG=false, embedded=false)
+01:04:09,043 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.Queue (persistent=false, DFG=false, embedded=false)
+01:04:09,044 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.Set (persistent=true, DFG=false, embedded=false)
+01:04:09,045 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.SortedSet (persistent=true, DFG=false, embedded=false)
+01:04:09,046 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.SortedMap (persistent=true, DFG=false, embedded=false)
+01:04:09,048 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.Stack (persistent=false, DFG=false, embedded=false)
+01:04:09,049 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.TreeMap (persistent=true, DFG=false, embedded=false)
+01:04:09,051 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.TreeSet (persistent=true, DFG=false, embedded=false)
+01:04:09,053 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java java.util.Vector (persistent=true, DFG=false, embedded=false)
+01:04:09,053 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [B (persistent=true, DFG=false, embedded=true)
+01:04:09,053 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [C (persistent=true, DFG=false, embedded=true)
+01:04:09,053 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [D (persistent=true, DFG=false, embedded=true)
+01:04:09,053 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [F (persistent=true, DFG=false, embedded=true)
+01:04:09,054 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [I (persistent=true, DFG=false, embedded=true)
+01:04:09,054 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [J (persistent=true, DFG=false, embedded=true)
+01:04:09,054 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [S (persistent=true, DFG=false, embedded=true)
+01:04:09,054 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [Z (persistent=true, DFG=false, embedded=true)
+01:04:09,054 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [Ljava.lang.Boolean; (persistent=true, DFG=false, embedded=true)
+01:04:09,054 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [Ljava.lang.Byte; (persistent=true, DFG=false, embedded=true)
+01:04:09,054 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [Ljava.lang.Character; (persistent=true, DFG=false, embedded=true)
+01:04:09,054 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [Ljava.lang.Double; (persistent=true, DFG=false, embedded=true)
+01:04:09,054 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [Ljava.lang.Float; (persistent=true, DFG=false, embedded=true)
+01:04:09,054 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [Ljava.lang.Integer; (persistent=true, DFG=false, embedded=true)
+01:04:09,054 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [Ljava.lang.Long; (persistent=true, DFG=false, embedded=true)
+01:04:09,054 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [Ljava.lang.Short; (persistent=true, DFG=false, embedded=true)
+01:04:09,054 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [Ljava.lang.Number; (persistent=true, DFG=false, embedded=true)
+01:04:09,055 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [Ljava.lang.String; (persistent=true, DFG=false, embedded=true)
+01:04:09,055 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [Ljava.math.BigInteger; (persistent=true, DFG=false, embedded=true)
+01:04:09,055 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [Ljava.math.BigDecimal; (persistent=true, DFG=false, embedded=true)
+01:04:09,055 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [Ljava.util.Date; (persistent=true, DFG=false, embedded=true)
+01:04:09,055 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [Ljava.util.Locale; (persistent=true, DFG=false, embedded=true)
+01:04:09,055 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java [Ljava.lang.Enum; (persistent=true, DFG=false, embedded=true)
+01:04:09,060 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java org.joda.time.DateTime (persistent=false, DFG=false, embedded=true)
+01:04:09,062 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java org.joda.time.LocalDate (persistent=false, DFG=false, embedded=true)
+01:04:09,063 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java org.joda.time.LocalTime (persistent=false, DFG=false, embedded=true)
+01:04:09,064 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java org.joda.time.Duration (persistent=false, DFG=false, embedded=true)
+01:04:09,068 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java org.joda.time.Interval (persistent=false, DFG=false, embedded=true)
+01:04:09,069 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java org.joda.time.Period (persistent=false, DFG=false, embedded=true)
+01:04:09,069 (main) DEBUG [DataNucleus.Persistence] - Java types support loaded
+01:04:09,070 (main) DEBUG [DataNucleus.Persistence] - Inicializando TypeConverters ...
+01:04:09,070 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.math.BigDecimal<->java.lang.String using org.datanucleus.store.types.converters.BigDecimalStringConverter
+01:04:09,071 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.math.BigInteger<->java.lang.String using org.datanucleus.store.types.converters.BigIntegerStringConverter
+01:04:09,071 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.BitSet<->java.lang.String using org.datanucleus.store.types.converters.BitSetStringConverter
+01:04:09,072 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Calendar<->java.lang.String using org.datanucleus.store.types.converters.CalendarStringConverter
+01:04:09,073 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.Class<->java.lang.String using org.datanucleus.store.types.converters.ClassStringConverter
+01:04:09,073 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.awt.Color<->java.lang.String using org.datanucleus.store.types.converters.ColorStringConverter
+01:04:09,074 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Currency<->java.lang.String using org.datanucleus.store.types.converters.CurrencyStringConverter
+01:04:09,074 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Date<->java.lang.Long using org.datanucleus.store.types.converters.DateLongConverter
+01:04:09,075 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Date<->java.lang.String using org.datanucleus.store.types.converters.DateStringConverter
+01:04:09,075 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Locale<->java.lang.String using org.datanucleus.store.types.converters.LocaleStringConverter
+01:04:09,076 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Date<->java.lang.Long using org.datanucleus.store.types.converters.SqlDateLongConverter
+01:04:09,076 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Date<->java.lang.String using org.datanucleus.store.types.converters.SqlDateStringConverter
+01:04:09,077 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Time<->java.lang.Long using org.datanucleus.store.types.converters.SqlTimeLongConverter
+01:04:09,077 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Time<->java.lang.String using org.datanucleus.store.types.converters.SqlTimeStringConverter
+01:04:09,077 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Timestamp<->java.lang.Long using org.datanucleus.store.types.converters.SqlTimestampLongConverter
+01:04:09,078 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.StringBuffer<->java.lang.String using org.datanucleus.store.types.converters.StringBufferStringConverter
+01:04:09,078 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.TimeZone<->java.lang.String using org.datanucleus.store.types.converters.TimeZoneStringConverter
+01:04:09,079 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.net.URI<->java.lang.String using org.datanucleus.store.types.converters.URIStringConverter
+01:04:09,079 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.net.URL<->java.lang.String using org.datanucleus.store.types.converters.URLStringConverter
+01:04:09,079 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.UUID<->java.lang.String using org.datanucleus.store.types.converters.UUIDStringConverter
+01:04:09,080 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalDate<->java.lang.String ignored since java type not present in CLASSPATH
+01:04:09,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalTime<->java.lang.String ignored since java type not present in CLASSPATH
+01:04:09,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalTime<->java.lang.Long ignored since java type not present in CLASSPATH
+01:04:09,082 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalDateTime<->java.lang.String ignored since java type not present in CLASSPATH
+01:04:09,083 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.io.Serializable<->java.lang.String using org.datanucleus.store.types.converters.SerializableStringConverter
+01:04:09,084 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.io.Serializable<->[B using org.datanucleus.store.types.converters.SerializableByteArrayConverter
+01:04:09,085 (main) DEBUG [DataNucleus.Persistence] - Added converter for org.joda.time.DateTime<->java.lang.String using org.datanucleus.store.types.converters.JodaDateTimeStringConverter
+01:04:09,086 (main) DEBUG [DataNucleus.Persistence] - Added converter for org.joda.time.Duration<->java.lang.String using org.datanucleus.store.types.converters.JodaDurationStringConverter
+01:04:09,086 (main) DEBUG [DataNucleus.Persistence] - Added converter for org.joda.time.Interval<->java.lang.String using org.datanucleus.store.types.converters.JodaIntervalStringConverter
+01:04:09,087 (main) DEBUG [DataNucleus.Persistence] - Added converter for org.joda.time.LocalDate<->java.lang.String using org.datanucleus.store.types.converters.JodaLocalDateStringConverter
+01:04:09,088 (main) DEBUG [DataNucleus.Persistence] - Added converter for org.joda.time.LocalTime<->java.lang.String using org.datanucleus.store.types.converters.JodaLocalTimeStringConverter
+01:04:09,089 (main) DEBUG [DataNucleus.Persistence] - Added converter for org.joda.time.Period<->java.lang.String using org.datanucleus.store.types.converters.JodaPeriodStringConverter
+01:04:09,089 (main) DEBUG [DataNucleus.Persistence] - TypeConverters listo
+01:04:09,089 (main) DEBUG [DataNucleus.MetaData] - MetaDataManager : Input=(XML,Annotations), XML-Validation=false, XML-Suffices=(persistence=*.jdo, orm=orm, query=*.jdoquery), JDO-listener=false
+01:04:09,089 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Carga de Metadata de los archivos de metadata "[-enhancerName, ASM]" ...
+01:04:09,090 (main) WARN  [DataNucleus.MetaData] - Metadata file -enhancerName not found in CLASSPATH
+01:04:09,090 (main) WARN  [DataNucleus.MetaData] - Metadata file ASM not found in CLASSPATH
+01:04:09,090 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Carga de Metadata ya ha terminado
+01:04:09,127 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Carga de Metadata de las clases "[dom.orden.ByCodFarmacia, dom.farmacia.Debe, dom.farmacia.Farmacias, dom.farmacia.Movimiento, dom.farmacia.Telefono, dom.farmacia.Drogueria, dom.farmacia.Farmacia, dom.farmacia.Farmacia$1, dom.farmacia.Haber, dom.farmacia.TipoMovimiento, dom.farmacia.CorreoElectronico]" ...
+01:04:09,138 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.orden.ByCodFarmacia" en /META-INF/package.jdo
+01:04:09,138 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.orden.ByCodFarmacia" en /WEB-INF/package.jdo
+01:04:09,139 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.orden.ByCodFarmacia" en /package.jdo
+01:04:09,139 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.orden.ByCodFarmacia" en /dom/package.jdo
+01:04:09,139 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.orden.ByCodFarmacia" en /dom.jdo
+01:04:09,140 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.orden.ByCodFarmacia" en /dom/orden/package.jdo
+01:04:09,140 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.orden.ByCodFarmacia" en /dom/orden.jdo
+01:04:09,140 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.orden.ByCodFarmacia" en /dom/orden/ByCodFarmacia.jdo
+01:04:09,140 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "dom.orden.ByCodFarmacia"
+01:04:09,140 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "dom.orden.ByCodFarmacia" no tener Meta-Data
+01:04:09,141 (main) DEBUG [DataNucleus.MetaData] - La clase "dom.orden.ByCodFarmacia" no tiene MetaData o annotaciones.
+01:04:09,161 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Debe" tiene anotaciones pero no hay ningï¿½n AnnotationReader registrado para este tipo de anotaciones. Por favor compruebe el CLASSPATH y las anotaciones para validez.
+01:04:09,161 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Debe" en /META-INF/package.jdo
+01:04:09,162 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Debe" en /WEB-INF/package.jdo
+01:04:09,162 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Debe" en /package.jdo
+01:04:09,162 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Debe" en /dom/package.jdo
+01:04:09,162 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Debe" en /dom.jdo
+01:04:09,163 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Debe" en /dom/farmacia/package.jdo
+01:04:09,163 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Debe" en /dom/farmacia.jdo
+01:04:09,163 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Debe" en /dom/farmacia/Debe.jdo
+01:04:09,163 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "dom.farmacia.Debe"
+01:04:09,163 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Debe" tiene anotaciones pero no hay ningï¿½n AnnotationReader registrado para este tipo de anotaciones. Por favor compruebe el CLASSPATH y las anotaciones para validez.
+01:04:09,164 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "dom.farmacia.Debe" no tener Meta-Data
+01:04:09,164 (main) DEBUG [DataNucleus.MetaData] - La clase "dom.farmacia.Debe" no tiene MetaData o annotaciones.
+01:04:09,169 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Farmacias" tiene anotaciones pero no hay ningï¿½n AnnotationReader registrado para este tipo de anotaciones. Por favor compruebe el CLASSPATH y las anotaciones para validez.
+01:04:09,169 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Farmacias" en /META-INF/package.jdo
+01:04:09,170 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Farmacias" en /WEB-INF/package.jdo
+01:04:09,170 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Farmacias" en /package.jdo
+01:04:09,170 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Farmacias" en /dom/package.jdo
+01:04:09,171 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Farmacias" en /dom.jdo
+01:04:09,171 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Farmacias" en /dom/farmacia/package.jdo
+01:04:09,171 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Farmacias" en /dom/farmacia.jdo
+01:04:09,171 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Farmacias" en /dom/farmacia/Farmacias.jdo
+01:04:09,171 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "dom.farmacia.Farmacias"
+01:04:09,172 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Farmacias" tiene anotaciones pero no hay ningï¿½n AnnotationReader registrado para este tipo de anotaciones. Por favor compruebe el CLASSPATH y las anotaciones para validez.
+01:04:09,172 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "dom.farmacia.Farmacias" no tener Meta-Data
+01:04:09,172 (main) DEBUG [DataNucleus.MetaData] - La clase "dom.farmacia.Farmacias" no tiene MetaData o annotaciones.
+01:04:09,215 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Movimiento" tiene anotaciones de JDO y vamos a usarlas.
+01:04:09,227 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Telefono" tiene anotaciones de JDO y vamos a usarlas.
+01:04:09,228 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Drogueria" tiene anotaciones de JDO y vamos a usarlas.
+01:04:09,236 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Farmacia" tiene anotaciones de JDO y vamos a usarlas.
+01:04:09,248 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Farmacia$1" en /META-INF/package.jdo
+01:04:09,249 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Farmacia$1" en /WEB-INF/package.jdo
+01:04:09,249 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Farmacia$1" en /package.jdo
+01:04:09,249 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Farmacia$1" en /dom/package.jdo
+01:04:09,249 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Farmacia$1" en /dom.jdo
+01:04:09,250 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Farmacia$1" en /dom/farmacia/package.jdo
+01:04:09,250 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Farmacia$1" en /dom/farmacia.jdo
+01:04:09,250 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Farmacia$1" en /dom/farmacia/Farmacia$1.jdo
+01:04:09,250 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "dom.farmacia.Farmacia$1"
+01:04:09,250 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "dom.farmacia.Farmacia$1" no tener Meta-Data
+01:04:09,250 (main) DEBUG [DataNucleus.MetaData] - La clase "dom.farmacia.Farmacia$1" no tiene MetaData o annotaciones.
+01:04:09,251 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Haber" tiene anotaciones pero no hay ningï¿½n AnnotationReader registrado para este tipo de anotaciones. Por favor compruebe el CLASSPATH y las anotaciones para validez.
+01:04:09,251 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Haber" en /META-INF/package.jdo
+01:04:09,251 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Haber" en /WEB-INF/package.jdo
+01:04:09,252 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Haber" en /package.jdo
+01:04:09,252 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Haber" en /dom/package.jdo
+01:04:09,252 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Haber" en /dom.jdo
+01:04:09,252 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Haber" en /dom/farmacia/package.jdo
+01:04:09,252 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Haber" en /dom/farmacia.jdo
+01:04:09,253 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.Haber" en /dom/farmacia/Haber.jdo
+01:04:09,253 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "dom.farmacia.Haber"
+01:04:09,253 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Haber" tiene anotaciones pero no hay ningï¿½n AnnotationReader registrado para este tipo de anotaciones. Por favor compruebe el CLASSPATH y las anotaciones para validez.
+01:04:09,253 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "dom.farmacia.Haber" no tener Meta-Data
+01:04:09,253 (main) DEBUG [DataNucleus.MetaData] - La clase "dom.farmacia.Haber" no tiene MetaData o annotaciones.
+01:04:09,253 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.TipoMovimiento" en /META-INF/package.jdo
+01:04:09,253 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.TipoMovimiento" en /WEB-INF/package.jdo
+01:04:09,253 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.TipoMovimiento" en /package.jdo
+01:04:09,254 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.TipoMovimiento" en /dom/package.jdo
+01:04:09,254 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.TipoMovimiento" en /dom.jdo
+01:04:09,254 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.TipoMovimiento" en /dom/farmacia/package.jdo
+01:04:09,254 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.TipoMovimiento" en /dom/farmacia.jdo
+01:04:09,254 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "dom.farmacia.TipoMovimiento" en /dom/farmacia/TipoMovimiento.jdo
+01:04:09,254 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "dom.farmacia.TipoMovimiento"
+01:04:09,255 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "dom.farmacia.TipoMovimiento" no tener Meta-Data
+01:04:09,255 (main) DEBUG [DataNucleus.MetaData] - La clase "dom.farmacia.TipoMovimiento" no tiene MetaData o annotaciones.
+01:04:09,255 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.CorreoElectronico" tiene anotaciones de JDO y vamos a usarlas.
+01:04:09,255 (main) DEBUG [DataNucleus.MetaData] - Populaciï¿½n del MetaData ...
+01:04:09,256 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Movimiento" : Populando Meta-Data
+01:04:09,256 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Movimiento" campo "fechaMovimiento" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,256 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Movimiento" campo "concepMovimiento" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,257 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Movimiento" campo "montoMovimiento" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,257 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Movimiento" campo "tipoMovimiento" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,277 (main) DEBUG [DataNucleus.Persistence] - Tipo de Java dom.farmacia.TipoMovimiento como el tipo de Java java.lang.Enum
+01:04:09,277 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Telefono" : Populando Meta-Data
+01:04:09,277 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Telefono" campo "descripcion" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,277 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Telefono" campo "numTelefono" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,277 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Drogueria" : Populando Meta-Data
+01:04:09,277 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Drogueria" campo "nombre" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,277 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Drogueria" campo "direccion" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,278 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Drogueria" campo "codigoPostal" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,278 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Farmacia" : Populando Meta-Data
+01:04:09,278 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Farmacia" campo "nombre" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,278 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Farmacia" campo "direccion" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,278 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Farmacia" campo "titular" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,278 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Farmacia" campo "CUIT" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,278 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Farmacia" campo "IngBrutos" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,278 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Farmacia" campo "condIva" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,279 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Farmacia" campo "saldo" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,279 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Farmacia" campo "droguerias" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,279 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Farmacia" campo "movimientos" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,279 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Farmacia" campo "telefono" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,279 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Farmacia" campo "listaCorreoElectronico" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,279 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Farmacia" campo "ownedBy" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,279 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Farmacia" campo "container" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,280 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "org.apache.isis.applib.DomainObjectContainer" en /META-INF/package.jdo
+01:04:09,280 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "org.apache.isis.applib.DomainObjectContainer" en /WEB-INF/package.jdo
+01:04:09,281 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "org.apache.isis.applib.DomainObjectContainer" en /package.jdo
+01:04:09,281 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "org.apache.isis.applib.DomainObjectContainer" en /org/package.jdo
+01:04:09,281 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "org.apache.isis.applib.DomainObjectContainer" en /org.jdo
+01:04:09,281 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "org.apache.isis.applib.DomainObjectContainer" en /org/apache/package.jdo
+01:04:09,282 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "org.apache.isis.applib.DomainObjectContainer" en /org/apache.jdo
+01:04:09,282 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "org.apache.isis.applib.DomainObjectContainer" en /org/apache/isis/package.jdo
+01:04:09,282 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "org.apache.isis.applib.DomainObjectContainer" en /org/apache/isis.jdo
+01:04:09,282 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "org.apache.isis.applib.DomainObjectContainer" en /org/apache/isis/applib/package.jdo
+01:04:09,283 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "org.apache.isis.applib.DomainObjectContainer" en /org/apache/isis/applib.jdo
+01:04:09,283 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "org.apache.isis.applib.DomainObjectContainer" en /org/apache/isis/applib/DomainObjectContainer.jdo
+01:04:09,283 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "org.apache.isis.applib.DomainObjectContainer"
+01:04:09,283 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "org.apache.isis.applib.DomainObjectContainer" no tener Meta-Data
+01:04:09,288 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.CorreoElectronico" : Populando Meta-Data
+01:04:09,288 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.CorreoElectronico" campo "descripcion" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,288 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.CorreoElectronico" campo "direccion" : aï¿½adiendo el Meta-Data por el campo como no estaba en la definiciï¿½n de Meta-Data.
+01:04:09,289 (main) DEBUG [DataNucleus.MetaData] - Inicialisaciï¿½n del MetaData ...
+01:04:09,289 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Movimiento" : Inicializando Meta-Data
+01:04:09,291 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Telefono" : Inicializando Meta-Data
+01:04:09,292 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Drogueria" : Inicializando Meta-Data
+01:04:09,292 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.Farmacia" : Inicializando Meta-Data
+01:04:09,292 (main) DEBUG [DataNucleus.MetaData] - Clase "dom.farmacia.CorreoElectronico" : Inicializando Meta-Data
+01:04:09,292 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Carga de Metadata ya ha terminado
+01:04:09,293 (main) DEBUG [DataNucleus.Enhancer] - Enhance of class "dom.farmacia.Movimiento" starting ...
+01:04:09,329 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt implement the interface "javax.jdo.spi.PersistenceCapable" but is required
+01:04:09,330 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have field "jdoInheritedFieldCount" but is required
+01:04:09,330 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have field "jdoFieldNames" but is required
+01:04:09,330 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have field "jdoPersistenceCapableSuperclass" but is required
+01:04:09,330 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have field "jdoFieldTypes" but is required
+01:04:09,330 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have field "jdoStateManager" but is required
+01:04:09,330 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have field "jdoFieldFlags" but is required
+01:04:09,330 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have field "jdoFlags" but is required
+01:04:09,330 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "__jdoGetInheritedFieldCount" but is required
+01:04:09,330 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoNewInstance" but is required
+01:04:09,330 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoNewInstance" but is required
+01:04:09,330 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoReplaceField" but is required
+01:04:09,330 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoIsDirty" but is required
+01:04:09,330 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoReplaceFields" but is required
+01:04:09,330 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoIsPersistent" but is required
+01:04:09,330 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoIsNew" but is required
+01:04:09,330 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoIsTransactional" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoProvideFields" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoCopyFields" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoCopyKeyFieldsToObjectId" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoCopyKeyFieldsToObjectId" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoGetManagedFieldCount" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoCopyKeyFieldsFromObjectId" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoCopyKeyFieldsFromObjectId" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoReplaceStateManager" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoNewObjectIdInstance" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoNewObjectIdInstance" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoGetTransactionalObjectId" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoGetPersistenceManager" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoMakeDirty" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "__jdoFieldFlagsInit" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoSuperClone" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "__jdoFieldNamesInit" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoProvideField" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoPreSerialize" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoCopyField" but is required
+01:04:09,331 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoIsDeleted" but is required
+01:04:09,332 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoReplaceFlags" but is required
+01:04:09,332 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoGetObjectId" but is required
+01:04:09,332 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoIsDetached" but is required
+01:04:09,332 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "__jdoPersistenceCapableSuperclassInit" but is required
+01:04:09,332 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "___jdo$loadClass" but is required
+01:04:09,332 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "__jdoFieldTypesInit" but is required
+01:04:09,332 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Movimiento" doesnt have method "jdoGetVersion" but is required
+01:04:09,341 (main) DEBUG [DataNucleus.Enhancer] - Adding interface: javax.jdo.spi.PersistenceCapable
+01:04:09,348 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Movimiento.getTipoMovimiento changing field "dom.farmacia.Movimiento.tipoMovimiento" for call to "jdoGettipoMovimiento()"
+01:04:09,348 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Movimiento.setTipoMovimiento changing field "dom.farmacia.Movimiento.tipoMovimiento" for call to "jdoSettipoMovimiento()"
+01:04:09,348 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Movimiento.getNumMovimiento changing field "dom.farmacia.Movimiento.numMovimiento" for call to "jdoGetnumMovimiento()"
+01:04:09,348 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Movimiento.setNumMovimiento changing field "dom.farmacia.Movimiento.numMovimiento" for call to "jdoSetnumMovimiento()"
+01:04:09,349 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Movimiento.getFechaMovimiento changing field "dom.farmacia.Movimiento.fechaMovimiento" for call to "jdoGetfechaMovimiento()"
+01:04:09,349 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Movimiento.setFechaMovimiento changing field "dom.farmacia.Movimiento.fechaMovimiento" for call to "jdoSetfechaMovimiento()"
+01:04:09,349 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Movimiento.<init> : omitting enhance of set of field "dom.farmacia.Movimiento.numMovimiento"
+01:04:09,350 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Movimiento.<init> : omitting enhance of set of field "dom.farmacia.Movimiento.fechaMovimiento"
+01:04:09,350 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Movimiento.<init> : omitting enhance of set of field "dom.farmacia.Movimiento.concepMovimiento"
+01:04:09,350 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Movimiento.<init> : omitting enhance of set of field "dom.farmacia.Movimiento.montoMovimiento"
+01:04:09,350 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Movimiento.getConcepMovimiento changing field "dom.farmacia.Movimiento.concepMovimiento" for call to "jdoGetconcepMovimiento()"
+01:04:09,350 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Movimiento.setConcepMovimiento changing field "dom.farmacia.Movimiento.concepMovimiento" for call to "jdoSetconcepMovimiento()"
+01:04:09,350 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Movimiento.getMontoMovimiento changing field "dom.farmacia.Movimiento.montoMovimiento" for call to "jdoGetmontoMovimiento()"
+01:04:09,350 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Movimiento.setMontoMovimiento changing field "dom.farmacia.Movimiento.montoMovimiento" for call to "jdoSetmontoMovimiento()"
+01:04:09,351 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Movimiento.title changing field "dom.farmacia.Movimiento.fechaMovimiento" for call to "jdoGetfechaMovimiento()"
+01:04:09,351 (main) DEBUG [DataNucleus.Enhancer] - Adding field "javax.jdo.spi.StateManager jdoStateManager"
+01:04:09,351 (main) DEBUG [DataNucleus.Enhancer] - Adding field "byte jdoFlags"
+01:04:09,351 (main) DEBUG [DataNucleus.Enhancer] - Adding field "[B jdoFieldFlags"
+01:04:09,351 (main) DEBUG [DataNucleus.Enhancer] - Adding field "java.lang.Class jdoPersistenceCapableSuperclass"
+01:04:09,351 (main) DEBUG [DataNucleus.Enhancer] - Adding field "[Ljava.lang.Class; jdoFieldTypes"
+01:04:09,351 (main) DEBUG [DataNucleus.Enhancer] - Adding field "[Ljava.lang.String; jdoFieldNames"
+01:04:09,351 (main) DEBUG [DataNucleus.Enhancer] - Adding field "int jdoInheritedFieldCount"
+01:04:09,352 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void <clinit>()"
+01:04:09,354 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsFromObjectId(interface javax.jdo.spi.PersistenceCapable$ObjectIdFieldConsumer fc, class java.lang.Object oid)"
+01:04:09,354 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsFromObjectId(class java.lang.Object oid)"
+01:04:09,354 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsToObjectId(class java.lang.Object oid)"
+01:04:09,354 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsToObjectId(interface javax.jdo.spi.PersistenceCapable$ObjectIdFieldSupplier fs, class java.lang.Object oid)"
+01:04:09,355 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoGetObjectId()"
+01:04:09,355 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoGetVersion()"
+01:04:09,355 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoPreSerialize()"
+01:04:09,355 (main) DEBUG [DataNucleus.Enhancer] - Adding method "javax.jdo.PersistenceManager jdoGetPersistenceManager()"
+01:04:09,355 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoGetTransactionalObjectId()"
+01:04:09,356 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsDeleted()"
+01:04:09,356 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsDirty()"
+01:04:09,356 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsNew()"
+01:04:09,356 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsPersistent()"
+01:04:09,357 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsTransactional()"
+01:04:09,357 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoMakeDirty(class java.lang.String fieldName)"
+01:04:09,357 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoNewObjectIdInstance()"
+01:04:09,357 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoNewObjectIdInstance(class java.lang.Object key)"
+01:04:09,358 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoProvideFields(class [I indices)"
+01:04:09,358 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceFields(class [I indices)"
+01:04:09,358 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceFlags()"
+01:04:09,358 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceStateManager(interface javax.jdo.spi.StateManager sm)"
+01:04:09,359 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsDetached()"
+01:04:09,359 (main) DEBUG [DataNucleus.Enhancer] - Adding method "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm)"
+01:04:09,359 (main) DEBUG [DataNucleus.Enhancer] - Adding method "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm, class java.lang.Object obj)"
+01:04:09,360 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceField(int index)"
+01:04:09,360 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoProvideField(int index)"
+01:04:09,360 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyField(class dom.farmacia.Movimiento obj, int index)"
+01:04:09,361 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyFields(class java.lang.Object obj, class [I indices)"
+01:04:09,361 (main) DEBUG [DataNucleus.Enhancer] - Adding method "[Ljava.lang.String; __jdoFieldNamesInit()"
+01:04:09,361 (main) DEBUG [DataNucleus.Enhancer] - Adding method "[Ljava.lang.Class; __jdoFieldTypesInit()"
+01:04:09,361 (main) DEBUG [DataNucleus.Enhancer] - Adding method "[B __jdoFieldFlagsInit()"
+01:04:09,361 (main) DEBUG [DataNucleus.Enhancer] - Adding method "int __jdoGetInheritedFieldCount()"
+01:04:09,361 (main) DEBUG [DataNucleus.Enhancer] - Adding method "int jdoGetManagedFieldCount()"
+01:04:09,362 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Class __jdoPersistenceCapableSuperclassInit()"
+01:04:09,362 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Class ___jdo$loadClass(class java.lang.String className)"
+01:04:09,362 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoSuperClone()"
+01:04:09,363 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.String jdoGetconcepMovimiento(class dom.farmacia.Movimiento objPC)"
+01:04:09,363 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetconcepMovimiento(class dom.farmacia.Movimiento objPC, class java.lang.String val)"
+01:04:09,364 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.util.Date jdoGetfechaMovimiento(class dom.farmacia.Movimiento objPC)"
+01:04:09,364 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetfechaMovimiento(class dom.farmacia.Movimiento objPC, class java.util.Date val)"
+01:04:09,364 (main) DEBUG [DataNucleus.Enhancer] - Adding method "float jdoGetmontoMovimiento(class dom.farmacia.Movimiento objPC)"
+01:04:09,364 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetmontoMovimiento(class dom.farmacia.Movimiento objPC, float val)"
+01:04:09,365 (main) DEBUG [DataNucleus.Enhancer] - Adding method "int jdoGetnumMovimiento(class dom.farmacia.Movimiento objPC)"
+01:04:09,365 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetnumMovimiento(class dom.farmacia.Movimiento objPC, int val)"
+01:04:09,365 (main) DEBUG [DataNucleus.Enhancer] - Adding method "dom.farmacia.TipoMovimiento jdoGettipoMovimiento(class dom.farmacia.Movimiento objPC)"
+01:04:09,365 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSettipoMovimiento(class dom.farmacia.Movimiento objPC, class dom.farmacia.TipoMovimiento val)"
+01:04:09,366 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/home/mati89/workspace/org.ifes.FarmacoProyect/dom/target/classes/dom/farmacia/Movimiento.class" with enhanced definition
+01:04:09,366 (main) DEBUG [DataNucleus.Enhancer] - Enhance of class "dom.farmacia.Movimiento" completed
+01:04:09,366 (main) DEBUG [DataNucleus.Enhancer] - Enhance of class "dom.farmacia.Telefono" starting ...
+01:04:09,367 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt implement the interface "javax.jdo.spi.PersistenceCapable" but is required
+01:04:09,367 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have field "jdoInheritedFieldCount" but is required
+01:04:09,367 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have field "jdoFieldNames" but is required
+01:04:09,367 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have field "jdoPersistenceCapableSuperclass" but is required
+01:04:09,367 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have field "jdoFieldTypes" but is required
+01:04:09,367 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have field "jdoStateManager" but is required
+01:04:09,367 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have field "jdoFieldFlags" but is required
+01:04:09,367 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have field "jdoFlags" but is required
+01:04:09,367 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "__jdoGetInheritedFieldCount" but is required
+01:04:09,367 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoNewInstance" but is required
+01:04:09,367 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoNewInstance" but is required
+01:04:09,367 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoReplaceField" but is required
+01:04:09,367 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoIsDirty" but is required
+01:04:09,367 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoReplaceFields" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoIsPersistent" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoIsNew" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoIsTransactional" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoProvideFields" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoCopyFields" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoCopyKeyFieldsToObjectId" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoCopyKeyFieldsToObjectId" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoGetManagedFieldCount" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoCopyKeyFieldsFromObjectId" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoCopyKeyFieldsFromObjectId" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoReplaceStateManager" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoNewObjectIdInstance" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoNewObjectIdInstance" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoGetTransactionalObjectId" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoGetPersistenceManager" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoMakeDirty" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "__jdoFieldFlagsInit" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoSuperClone" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "__jdoFieldNamesInit" but is required
+01:04:09,368 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoProvideField" but is required
+01:04:09,369 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoPreSerialize" but is required
+01:04:09,369 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoCopyField" but is required
+01:04:09,369 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoIsDeleted" but is required
+01:04:09,369 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoReplaceFlags" but is required
+01:04:09,369 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoGetObjectId" but is required
+01:04:09,369 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoIsDetached" but is required
+01:04:09,369 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "__jdoPersistenceCapableSuperclassInit" but is required
+01:04:09,369 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "___jdo$loadClass" but is required
+01:04:09,369 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "__jdoFieldTypesInit" but is required
+01:04:09,369 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Telefono" doesnt have method "jdoGetVersion" but is required
+01:04:09,369 (main) DEBUG [DataNucleus.Enhancer] - Adding interface: javax.jdo.spi.PersistenceCapable
+01:04:09,370 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Telefono.getDescripcion changing field "dom.farmacia.Telefono.descripcion" for call to "jdoGetdescripcion()"
+01:04:09,370 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Telefono.setDescripcion changing field "dom.farmacia.Telefono.descripcion" for call to "jdoSetdescripcion()"
+01:04:09,370 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Telefono.getNumTelefono changing field "dom.farmacia.Telefono.numTelefono" for call to "jdoGetnumTelefono()"
+01:04:09,370 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Telefono.setNumTelefono changing field "dom.farmacia.Telefono.numTelefono" for call to "jdoSetnumTelefono()"
+01:04:09,370 (main) DEBUG [DataNucleus.Enhancer] - Adding field "javax.jdo.spi.StateManager jdoStateManager"
+01:04:09,370 (main) DEBUG [DataNucleus.Enhancer] - Adding field "byte jdoFlags"
+01:04:09,370 (main) DEBUG [DataNucleus.Enhancer] - Adding field "[B jdoFieldFlags"
+01:04:09,370 (main) DEBUG [DataNucleus.Enhancer] - Adding field "java.lang.Class jdoPersistenceCapableSuperclass"
+01:04:09,370 (main) DEBUG [DataNucleus.Enhancer] - Adding field "[Ljava.lang.Class; jdoFieldTypes"
+01:04:09,371 (main) DEBUG [DataNucleus.Enhancer] - Adding field "[Ljava.lang.String; jdoFieldNames"
+01:04:09,371 (main) DEBUG [DataNucleus.Enhancer] - Adding field "int jdoInheritedFieldCount"
+01:04:09,371 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void <clinit>()"
+01:04:09,371 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsFromObjectId(interface javax.jdo.spi.PersistenceCapable$ObjectIdFieldConsumer fc, class java.lang.Object oid)"
+01:04:09,371 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsFromObjectId(class java.lang.Object oid)"
+01:04:09,371 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsToObjectId(class java.lang.Object oid)"
+01:04:09,371 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsToObjectId(interface javax.jdo.spi.PersistenceCapable$ObjectIdFieldSupplier fs, class java.lang.Object oid)"
+01:04:09,372 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoGetObjectId()"
+01:04:09,372 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoGetVersion()"
+01:04:09,372 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoPreSerialize()"
+01:04:09,372 (main) DEBUG [DataNucleus.Enhancer] - Adding method "javax.jdo.PersistenceManager jdoGetPersistenceManager()"
+01:04:09,372 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoGetTransactionalObjectId()"
+01:04:09,372 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsDeleted()"
+01:04:09,372 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsDirty()"
+01:04:09,372 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsNew()"
+01:04:09,373 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsPersistent()"
+01:04:09,373 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsTransactional()"
+01:04:09,373 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoMakeDirty(class java.lang.String fieldName)"
+01:04:09,373 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoNewObjectIdInstance()"
+01:04:09,373 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoNewObjectIdInstance(class java.lang.Object key)"
+01:04:09,373 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoProvideFields(class [I indices)"
+01:04:09,373 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceFields(class [I indices)"
+01:04:09,373 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceFlags()"
+01:04:09,374 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceStateManager(interface javax.jdo.spi.StateManager sm)"
+01:04:09,374 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsDetached()"
+01:04:09,374 (main) DEBUG [DataNucleus.Enhancer] - Adding method "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm)"
+01:04:09,374 (main) DEBUG [DataNucleus.Enhancer] - Adding method "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm, class java.lang.Object obj)"
+01:04:09,374 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceField(int index)"
+01:04:09,374 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoProvideField(int index)"
+01:04:09,375 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyField(class dom.farmacia.Telefono obj, int index)"
+01:04:09,375 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyFields(class java.lang.Object obj, class [I indices)"
+01:04:09,375 (main) DEBUG [DataNucleus.Enhancer] - Adding method "[Ljava.lang.String; __jdoFieldNamesInit()"
+01:04:09,375 (main) DEBUG [DataNucleus.Enhancer] - Adding method "[Ljava.lang.Class; __jdoFieldTypesInit()"
+01:04:09,375 (main) DEBUG [DataNucleus.Enhancer] - Adding method "[B __jdoFieldFlagsInit()"
+01:04:09,375 (main) DEBUG [DataNucleus.Enhancer] - Adding method "int __jdoGetInheritedFieldCount()"
+01:04:09,375 (main) DEBUG [DataNucleus.Enhancer] - Adding method "int jdoGetManagedFieldCount()"
+01:04:09,375 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Class __jdoPersistenceCapableSuperclassInit()"
+01:04:09,375 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Class ___jdo$loadClass(class java.lang.String className)"
+01:04:09,376 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoSuperClone()"
+01:04:09,376 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.String jdoGetdescripcion(class dom.farmacia.Telefono objPC)"
+01:04:09,376 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetdescripcion(class dom.farmacia.Telefono objPC, class java.lang.String val)"
+01:04:09,376 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.String jdoGetnumTelefono(class dom.farmacia.Telefono objPC)"
+01:04:09,376 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetnumTelefono(class dom.farmacia.Telefono objPC, class java.lang.String val)"
+01:04:09,377 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/home/mati89/workspace/org.ifes.FarmacoProyect/dom/target/classes/dom/farmacia/Telefono.class" with enhanced definition
+01:04:09,377 (main) DEBUG [DataNucleus.Enhancer] - Enhance of class "dom.farmacia.Telefono" completed
+01:04:09,377 (main) DEBUG [DataNucleus.Enhancer] - Enhance of class "dom.farmacia.Drogueria" starting ...
+01:04:09,377 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt implement the interface "javax.jdo.spi.PersistenceCapable" but is required
+01:04:09,378 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have field "jdoInheritedFieldCount" but is required
+01:04:09,378 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have field "jdoFieldNames" but is required
+01:04:09,378 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have field "jdoPersistenceCapableSuperclass" but is required
+01:04:09,378 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have field "jdoFieldTypes" but is required
+01:04:09,378 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have field "jdoStateManager" but is required
+01:04:09,378 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have field "jdoFieldFlags" but is required
+01:04:09,378 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have field "jdoFlags" but is required
+01:04:09,378 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "__jdoGetInheritedFieldCount" but is required
+01:04:09,378 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoNewInstance" but is required
+01:04:09,378 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoNewInstance" but is required
+01:04:09,378 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoReplaceField" but is required
+01:04:09,378 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoIsDirty" but is required
+01:04:09,378 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoReplaceFields" but is required
+01:04:09,378 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoIsPersistent" but is required
+01:04:09,378 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoIsNew" but is required
+01:04:09,378 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoIsTransactional" but is required
+01:04:09,379 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoProvideFields" but is required
+01:04:09,379 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoCopyFields" but is required
+01:04:09,379 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoCopyKeyFieldsToObjectId" but is required
+01:04:09,379 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoCopyKeyFieldsToObjectId" but is required
+01:04:09,379 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoGetManagedFieldCount" but is required
+01:04:09,379 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoCopyKeyFieldsFromObjectId" but is required
+01:04:09,379 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoCopyKeyFieldsFromObjectId" but is required
+01:04:09,379 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoReplaceStateManager" but is required
+01:04:09,379 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoNewObjectIdInstance" but is required
+01:04:09,379 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoNewObjectIdInstance" but is required
+01:04:09,379 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoGetTransactionalObjectId" but is required
+01:04:09,379 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoGetPersistenceManager" but is required
+01:04:09,379 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoMakeDirty" but is required
+01:04:09,379 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "__jdoFieldFlagsInit" but is required
+01:04:09,379 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoSuperClone" but is required
+01:04:09,379 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "__jdoFieldNamesInit" but is required
+01:04:09,379 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoProvideField" but is required
+01:04:09,379 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoPreSerialize" but is required
+01:04:09,379 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoCopyField" but is required
+01:04:09,380 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoIsDeleted" but is required
+01:04:09,380 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoReplaceFlags" but is required
+01:04:09,380 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoGetObjectId" but is required
+01:04:09,380 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoIsDetached" but is required
+01:04:09,380 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "__jdoPersistenceCapableSuperclassInit" but is required
+01:04:09,380 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "___jdo$loadClass" but is required
+01:04:09,380 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "__jdoFieldTypesInit" but is required
+01:04:09,380 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Drogueria" doesnt have method "jdoGetVersion" but is required
+01:04:09,380 (main) DEBUG [DataNucleus.Enhancer] - Adding interface: javax.jdo.spi.PersistenceCapable
+01:04:09,380 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Drogueria.getNombre changing field "dom.farmacia.Drogueria.nombre" for call to "jdoGetnombre()"
+01:04:09,381 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Drogueria.setNombre changing field "dom.farmacia.Drogueria.nombre" for call to "jdoSetnombre()"
+01:04:09,381 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Drogueria.getDireccion changing field "dom.farmacia.Drogueria.direccion" for call to "jdoGetdireccion()"
+01:04:09,381 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Drogueria.setDireccion changing field "dom.farmacia.Drogueria.direccion" for call to "jdoSetdireccion()"
+01:04:09,381 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Drogueria.getCodigoPostal changing field "dom.farmacia.Drogueria.codigoPostal" for call to "jdoGetcodigoPostal()"
+01:04:09,381 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Drogueria.setCodigoPostal changing field "dom.farmacia.Drogueria.codigoPostal" for call to "jdoSetcodigoPostal()"
+01:04:09,381 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Drogueria.title changing field "dom.farmacia.Drogueria.nombre" for call to "jdoGetnombre()"
+01:04:09,381 (main) DEBUG [DataNucleus.Enhancer] - Adding field "javax.jdo.spi.StateManager jdoStateManager"
+01:04:09,381 (main) DEBUG [DataNucleus.Enhancer] - Adding field "byte jdoFlags"
+01:04:09,381 (main) DEBUG [DataNucleus.Enhancer] - Adding field "[B jdoFieldFlags"
+01:04:09,381 (main) DEBUG [DataNucleus.Enhancer] - Adding field "java.lang.Class jdoPersistenceCapableSuperclass"
+01:04:09,381 (main) DEBUG [DataNucleus.Enhancer] - Adding field "[Ljava.lang.Class; jdoFieldTypes"
+01:04:09,382 (main) DEBUG [DataNucleus.Enhancer] - Adding field "[Ljava.lang.String; jdoFieldNames"
+01:04:09,382 (main) DEBUG [DataNucleus.Enhancer] - Adding field "int jdoInheritedFieldCount"
+01:04:09,382 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void <clinit>()"
+01:04:09,382 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsFromObjectId(interface javax.jdo.spi.PersistenceCapable$ObjectIdFieldConsumer fc, class java.lang.Object oid)"
+01:04:09,382 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsFromObjectId(class java.lang.Object oid)"
+01:04:09,382 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsToObjectId(class java.lang.Object oid)"
+01:04:09,382 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsToObjectId(interface javax.jdo.spi.PersistenceCapable$ObjectIdFieldSupplier fs, class java.lang.Object oid)"
+01:04:09,383 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoGetObjectId()"
+01:04:09,383 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoGetVersion()"
+01:04:09,383 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoPreSerialize()"
+01:04:09,383 (main) DEBUG [DataNucleus.Enhancer] - Adding method "javax.jdo.PersistenceManager jdoGetPersistenceManager()"
+01:04:09,383 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoGetTransactionalObjectId()"
+01:04:09,383 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsDeleted()"
+01:04:09,383 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsDirty()"
+01:04:09,383 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsNew()"
+01:04:09,384 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsPersistent()"
+01:04:09,384 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsTransactional()"
+01:04:09,384 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoMakeDirty(class java.lang.String fieldName)"
+01:04:09,384 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoNewObjectIdInstance()"
+01:04:09,384 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoNewObjectIdInstance(class java.lang.Object key)"
+01:04:09,384 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoProvideFields(class [I indices)"
+01:04:09,384 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceFields(class [I indices)"
+01:04:09,384 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceFlags()"
+01:04:09,385 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceStateManager(interface javax.jdo.spi.StateManager sm)"
+01:04:09,385 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsDetached()"
+01:04:09,385 (main) DEBUG [DataNucleus.Enhancer] - Adding method "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm)"
+01:04:09,385 (main) DEBUG [DataNucleus.Enhancer] - Adding method "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm, class java.lang.Object obj)"
+01:04:09,385 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceField(int index)"
+01:04:09,385 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoProvideField(int index)"
+01:04:09,386 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyField(class dom.farmacia.Drogueria obj, int index)"
+01:04:09,386 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyFields(class java.lang.Object obj, class [I indices)"
+01:04:09,386 (main) DEBUG [DataNucleus.Enhancer] - Adding method "[Ljava.lang.String; __jdoFieldNamesInit()"
+01:04:09,386 (main) DEBUG [DataNucleus.Enhancer] - Adding method "[Ljava.lang.Class; __jdoFieldTypesInit()"
+01:04:09,386 (main) DEBUG [DataNucleus.Enhancer] - Adding method "[B __jdoFieldFlagsInit()"
+01:04:09,386 (main) DEBUG [DataNucleus.Enhancer] - Adding method "int __jdoGetInheritedFieldCount()"
+01:04:09,386 (main) DEBUG [DataNucleus.Enhancer] - Adding method "int jdoGetManagedFieldCount()"
+01:04:09,386 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Class __jdoPersistenceCapableSuperclassInit()"
+01:04:09,386 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Class ___jdo$loadClass(class java.lang.String className)"
+01:04:09,387 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoSuperClone()"
+01:04:09,387 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.String jdoGetcodigoPostal(class dom.farmacia.Drogueria objPC)"
+01:04:09,387 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetcodigoPostal(class dom.farmacia.Drogueria objPC, class java.lang.String val)"
+01:04:09,387 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.String jdoGetdireccion(class dom.farmacia.Drogueria objPC)"
+01:04:09,387 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetdireccion(class dom.farmacia.Drogueria objPC, class java.lang.String val)"
+01:04:09,387 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.String jdoGetnombre(class dom.farmacia.Drogueria objPC)"
+01:04:09,388 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetnombre(class dom.farmacia.Drogueria objPC, class java.lang.String val)"
+01:04:09,388 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/home/mati89/workspace/org.ifes.FarmacoProyect/dom/target/classes/dom/farmacia/Drogueria.class" with enhanced definition
+01:04:09,388 (main) DEBUG [DataNucleus.Enhancer] - Enhance of class "dom.farmacia.Drogueria" completed
+01:04:09,388 (main) DEBUG [DataNucleus.Enhancer] - Enhance of class "dom.farmacia.Farmacia" starting ...
+01:04:09,389 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt implement the interface "javax.jdo.spi.PersistenceCapable" but is required
+01:04:09,390 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have field "jdoInheritedFieldCount" but is required
+01:04:09,390 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have field "jdoFieldNames" but is required
+01:04:09,390 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have field "jdoPersistenceCapableSuperclass" but is required
+01:04:09,390 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have field "jdoFieldTypes" but is required
+01:04:09,390 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have field "jdoStateManager" but is required
+01:04:09,390 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have field "jdoFieldFlags" but is required
+01:04:09,390 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have field "jdoFlags" but is required
+01:04:09,390 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "__jdoGetInheritedFieldCount" but is required
+01:04:09,390 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoNewInstance" but is required
+01:04:09,390 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoNewInstance" but is required
+01:04:09,390 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoReplaceField" but is required
+01:04:09,390 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoIsDirty" but is required
+01:04:09,390 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoReplaceFields" but is required
+01:04:09,390 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoIsPersistent" but is required
+01:04:09,390 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoIsNew" but is required
+01:04:09,390 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoIsTransactional" but is required
+01:04:09,390 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoProvideFields" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoCopyFields" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoCopyKeyFieldsToObjectId" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoCopyKeyFieldsToObjectId" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoGetManagedFieldCount" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoCopyKeyFieldsFromObjectId" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoCopyKeyFieldsFromObjectId" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoReplaceStateManager" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoNewObjectIdInstance" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoNewObjectIdInstance" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoGetTransactionalObjectId" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoGetPersistenceManager" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoMakeDirty" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "__jdoFieldFlagsInit" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoSuperClone" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "__jdoFieldNamesInit" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoProvideField" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoPreSerialize" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoCopyField" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoIsDeleted" but is required
+01:04:09,391 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoReplaceFlags" but is required
+01:04:09,392 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoGetObjectId" but is required
+01:04:09,392 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoIsDetached" but is required
+01:04:09,392 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "__jdoPersistenceCapableSuperclassInit" but is required
+01:04:09,392 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "___jdo$loadClass" but is required
+01:04:09,392 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "__jdoFieldTypesInit" but is required
+01:04:09,392 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.Farmacia" doesnt have method "jdoGetVersion" but is required
+01:04:09,392 (main) DEBUG [DataNucleus.Enhancer] - Adding interface: javax.jdo.spi.PersistenceCapable
+01:04:09,393 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.getListaCorreoElectronico changing field "dom.farmacia.Farmacia.listaCorreoElectronico" for call to "jdoGetlistaCorreoElectronico()"
+01:04:09,393 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.setListaCorreoElectronico changing field "dom.farmacia.Farmacia.listaCorreoElectronico" for call to "jdoSetlistaCorreoElectronico()"
+01:04:09,393 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.getTelefono changing field "dom.farmacia.Farmacia.telefono" for call to "jdoGettelefono()"
+01:04:09,393 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.setTelefono changing field "dom.farmacia.Farmacia.telefono" for call to "jdoSettelefono()"
+01:04:09,393 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.getMovimientos changing field "dom.farmacia.Farmacia.movimientos" for call to "jdoGetmovimientos()"
+01:04:09,393 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.setMovimientos changing field "dom.farmacia.Farmacia.movimientos" for call to "jdoSetmovimientos()"
+01:04:09,393 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.getDroguerias changing field "dom.farmacia.Farmacia.droguerias" for call to "jdoGetdroguerias()"
+01:04:09,393 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.setDroguerias changing field "dom.farmacia.Farmacia.droguerias" for call to "jdoSetdroguerias()"
+01:04:09,394 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.getCodfarmacia changing field "dom.farmacia.Farmacia.codFarmacia" for call to "jdoGetcodFarmacia()"
+01:04:09,394 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.setCodfarmacia changing field "dom.farmacia.Farmacia.codFarmacia" for call to "jdoSetcodFarmacia()"
+01:04:09,394 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.getNombre changing field "dom.farmacia.Farmacia.nombre" for call to "jdoGetnombre()"
+01:04:09,394 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.setNombre changing field "dom.farmacia.Farmacia.nombre" for call to "jdoSetnombre()"
+01:04:09,394 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.getDireccion changing field "dom.farmacia.Farmacia.direccion" for call to "jdoGetdireccion()"
+01:04:09,394 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.setDireccion changing field "dom.farmacia.Farmacia.direccion" for call to "jdoSetdireccion()"
+01:04:09,394 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.getTitular changing field "dom.farmacia.Farmacia.titular" for call to "jdoGettitular()"
+01:04:09,395 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.setTitular changing field "dom.farmacia.Farmacia.titular" for call to "jdoSettitular()"
+01:04:09,395 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.getCUIT changing field "dom.farmacia.Farmacia.CUIT" for call to "jdoGetCUIT()"
+01:04:09,395 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.setCUIT changing field "dom.farmacia.Farmacia.CUIT" for call to "jdoSetCUIT()"
+01:04:09,395 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.getIngBrutos changing field "dom.farmacia.Farmacia.IngBrutos" for call to "jdoGetIngBrutos()"
+01:04:09,395 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.setIngBrutos changing field "dom.farmacia.Farmacia.IngBrutos" for call to "jdoSetIngBrutos()"
+01:04:09,395 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.getCondIva changing field "dom.farmacia.Farmacia.condIva" for call to "jdoGetcondIva()"
+01:04:09,395 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.setCondIva changing field "dom.farmacia.Farmacia.condIva" for call to "jdoSetcondIva()"
+01:04:09,396 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.getSaldo changing field "dom.farmacia.Farmacia.saldo" for call to "jdoGetsaldo()"
+01:04:09,396 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.setSaldo changing field "dom.farmacia.Farmacia.saldo" for call to "jdoSetsaldo()"
+01:04:09,396 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.title changing field "dom.farmacia.Farmacia.nombre" for call to "jdoGetnombre()"
+01:04:09,396 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.getOwnedBy changing field "dom.farmacia.Farmacia.ownedBy" for call to "jdoGetownedBy()"
+01:04:09,396 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.Farmacia.setOwnedBy changing field "dom.farmacia.Farmacia.ownedBy" for call to "jdoSetownedBy()"
+01:04:09,396 (main) DEBUG [DataNucleus.Enhancer] - Adding field "javax.jdo.spi.StateManager jdoStateManager"
+01:04:09,396 (main) DEBUG [DataNucleus.Enhancer] - Adding field "byte jdoFlags"
+01:04:09,396 (main) DEBUG [DataNucleus.Enhancer] - Adding field "[B jdoFieldFlags"
+01:04:09,396 (main) DEBUG [DataNucleus.Enhancer] - Adding field "java.lang.Class jdoPersistenceCapableSuperclass"
+01:04:09,396 (main) DEBUG [DataNucleus.Enhancer] - Adding field "[Ljava.lang.Class; jdoFieldTypes"
+01:04:09,397 (main) DEBUG [DataNucleus.Enhancer] - Adding field "[Ljava.lang.String; jdoFieldNames"
+01:04:09,397 (main) DEBUG [DataNucleus.Enhancer] - Adding field "int jdoInheritedFieldCount"
+01:04:09,397 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void <clinit>()"
+01:04:09,397 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsFromObjectId(interface javax.jdo.spi.PersistenceCapable$ObjectIdFieldConsumer fc, class java.lang.Object oid)"
+01:04:09,397 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsFromObjectId(class java.lang.Object oid)"
+01:04:09,397 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsToObjectId(class java.lang.Object oid)"
+01:04:09,397 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsToObjectId(interface javax.jdo.spi.PersistenceCapable$ObjectIdFieldSupplier fs, class java.lang.Object oid)"
+01:04:09,397 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoGetObjectId()"
+01:04:09,398 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoGetVersion()"
+01:04:09,398 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoPreSerialize()"
+01:04:09,398 (main) DEBUG [DataNucleus.Enhancer] - Adding method "javax.jdo.PersistenceManager jdoGetPersistenceManager()"
+01:04:09,398 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoGetTransactionalObjectId()"
+01:04:09,398 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsDeleted()"
+01:04:09,398 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsDirty()"
+01:04:09,398 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsNew()"
+01:04:09,398 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsPersistent()"
+01:04:09,398 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsTransactional()"
+01:04:09,398 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoMakeDirty(class java.lang.String fieldName)"
+01:04:09,399 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoNewObjectIdInstance()"
+01:04:09,399 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoNewObjectIdInstance(class java.lang.Object key)"
+01:04:09,399 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoProvideFields(class [I indices)"
+01:04:09,399 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceFields(class [I indices)"
+01:04:09,399 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceFlags()"
+01:04:09,399 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceStateManager(interface javax.jdo.spi.StateManager sm)"
+01:04:09,399 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsDetached()"
+01:04:09,399 (main) DEBUG [DataNucleus.Enhancer] - Adding method "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm)"
+01:04:09,400 (main) DEBUG [DataNucleus.Enhancer] - Adding method "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm, class java.lang.Object obj)"
+01:04:09,400 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceField(int index)"
+01:04:09,401 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoProvideField(int index)"
+01:04:09,401 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyField(class dom.farmacia.Farmacia obj, int index)"
+01:04:09,401 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyFields(class java.lang.Object obj, class [I indices)"
+01:04:09,401 (main) DEBUG [DataNucleus.Enhancer] - Adding method "[Ljava.lang.String; __jdoFieldNamesInit()"
+01:04:09,401 (main) DEBUG [DataNucleus.Enhancer] - Adding method "[Ljava.lang.Class; __jdoFieldTypesInit()"
+01:04:09,401 (main) DEBUG [DataNucleus.Enhancer] - Adding method "[B __jdoFieldFlagsInit()"
+01:04:09,401 (main) DEBUG [DataNucleus.Enhancer] - Adding method "int __jdoGetInheritedFieldCount()"
+01:04:09,402 (main) DEBUG [DataNucleus.Enhancer] - Adding method "int jdoGetManagedFieldCount()"
+01:04:09,402 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Class __jdoPersistenceCapableSuperclassInit()"
+01:04:09,402 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Class ___jdo$loadClass(class java.lang.String className)"
+01:04:09,402 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoSuperClone()"
+01:04:09,402 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.String jdoGetCUIT(class dom.farmacia.Farmacia objPC)"
+01:04:09,402 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetCUIT(class dom.farmacia.Farmacia objPC, class java.lang.String val)"
+01:04:09,402 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.String jdoGetIngBrutos(class dom.farmacia.Farmacia objPC)"
+01:04:09,402 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetIngBrutos(class dom.farmacia.Farmacia objPC, class java.lang.String val)"
+01:04:09,403 (main) DEBUG [DataNucleus.Enhancer] - Adding method "int jdoGetcodFarmacia(class dom.farmacia.Farmacia objPC)"
+01:04:09,403 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetcodFarmacia(class dom.farmacia.Farmacia objPC, int val)"
+01:04:09,403 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.String jdoGetcondIva(class dom.farmacia.Farmacia objPC)"
+01:04:09,403 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetcondIva(class dom.farmacia.Farmacia objPC, class java.lang.String val)"
+01:04:09,403 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.String jdoGetdireccion(class dom.farmacia.Farmacia objPC)"
+01:04:09,403 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetdireccion(class dom.farmacia.Farmacia objPC, class java.lang.String val)"
+01:04:09,404 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.util.List jdoGetdroguerias(class dom.farmacia.Farmacia objPC)"
+01:04:09,404 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetdroguerias(class dom.farmacia.Farmacia objPC, interface java.util.List val)"
+01:04:09,404 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.util.List jdoGetlistaCorreoElectronico(class dom.farmacia.Farmacia objPC)"
+01:04:09,404 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetlistaCorreoElectronico(class dom.farmacia.Farmacia objPC, interface java.util.List val)"
+01:04:09,405 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.util.List jdoGetmovimientos(class dom.farmacia.Farmacia objPC)"
+01:04:09,405 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetmovimientos(class dom.farmacia.Farmacia objPC, interface java.util.List val)"
+01:04:09,405 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.String jdoGetnombre(class dom.farmacia.Farmacia objPC)"
+01:04:09,405 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetnombre(class dom.farmacia.Farmacia objPC, class java.lang.String val)"
+01:04:09,405 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.String jdoGetownedBy(class dom.farmacia.Farmacia objPC)"
+01:04:09,405 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetownedBy(class dom.farmacia.Farmacia objPC, class java.lang.String val)"
+01:04:09,405 (main) DEBUG [DataNucleus.Enhancer] - Adding method "float jdoGetsaldo(class dom.farmacia.Farmacia objPC)"
+01:04:09,406 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetsaldo(class dom.farmacia.Farmacia objPC, float val)"
+01:04:09,406 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.util.List jdoGettelefono(class dom.farmacia.Farmacia objPC)"
+01:04:09,406 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSettelefono(class dom.farmacia.Farmacia objPC, interface java.util.List val)"
+01:04:09,406 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.String jdoGettitular(class dom.farmacia.Farmacia objPC)"
+01:04:09,406 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSettitular(class dom.farmacia.Farmacia objPC, class java.lang.String val)"
+01:04:09,408 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/home/mati89/workspace/org.ifes.FarmacoProyect/dom/target/classes/dom/farmacia/Farmacia.class" with enhanced definition
+01:04:09,408 (main) DEBUG [DataNucleus.Enhancer] - Enhance of class "dom.farmacia.Farmacia" completed
+01:04:09,408 (main) DEBUG [DataNucleus.Enhancer] - Enhance of class "dom.farmacia.CorreoElectronico" starting ...
+01:04:09,408 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt implement the interface "javax.jdo.spi.PersistenceCapable" but is required
+01:04:09,408 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have field "jdoInheritedFieldCount" but is required
+01:04:09,408 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have field "jdoFieldNames" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have field "jdoPersistenceCapableSuperclass" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have field "jdoFieldTypes" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have field "jdoStateManager" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have field "jdoFieldFlags" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have field "jdoFlags" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "__jdoGetInheritedFieldCount" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoNewInstance" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoNewInstance" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoReplaceField" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoIsDirty" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoReplaceFields" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoIsPersistent" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoIsNew" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoIsTransactional" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoProvideFields" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoCopyFields" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoCopyKeyFieldsToObjectId" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoCopyKeyFieldsToObjectId" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoGetManagedFieldCount" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoCopyKeyFieldsFromObjectId" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoCopyKeyFieldsFromObjectId" but is required
+01:04:09,409 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoReplaceStateManager" but is required
+01:04:09,410 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoNewObjectIdInstance" but is required
+01:04:09,410 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoNewObjectIdInstance" but is required
+01:04:09,410 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoGetTransactionalObjectId" but is required
+01:04:09,410 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoGetPersistenceManager" but is required
+01:04:09,410 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoMakeDirty" but is required
+01:04:09,410 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "__jdoFieldFlagsInit" but is required
+01:04:09,410 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoSuperClone" but is required
+01:04:09,410 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "__jdoFieldNamesInit" but is required
+01:04:09,410 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoProvideField" but is required
+01:04:09,410 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoPreSerialize" but is required
+01:04:09,410 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoCopyField" but is required
+01:04:09,410 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoIsDeleted" but is required
+01:04:09,410 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoReplaceFlags" but is required
+01:04:09,410 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoGetObjectId" but is required
+01:04:09,410 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoIsDetached" but is required
+01:04:09,410 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "__jdoPersistenceCapableSuperclassInit" but is required
+01:04:09,410 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "___jdo$loadClass" but is required
+01:04:09,410 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "__jdoFieldTypesInit" but is required
+01:04:09,410 (main) DEBUG [DataNucleus.Enhancer] - Class "dom.farmacia.CorreoElectronico" doesnt have method "jdoGetVersion" but is required
+01:04:09,411 (main) DEBUG [DataNucleus.Enhancer] - Adding interface: javax.jdo.spi.PersistenceCapable
+01:04:09,411 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.CorreoElectronico.getDescripcion changing field "dom.farmacia.CorreoElectronico.descripcion" for call to "jdoGetdescripcion()"
+01:04:09,411 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.CorreoElectronico.setDescripcion changing field "dom.farmacia.CorreoElectronico.descripcion" for call to "jdoSetdescripcion()"
+01:04:09,411 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.CorreoElectronico.getDireccion changing field "dom.farmacia.CorreoElectronico.direccion" for call to "jdoGetdireccion()"
+01:04:09,411 (main) DEBUG [DataNucleus.Enhancer] - Enhancing original method dom.farmacia.CorreoElectronico.setDireccion changing field "dom.farmacia.CorreoElectronico.direccion" for call to "jdoSetdireccion()"
+01:04:09,411 (main) DEBUG [DataNucleus.Enhancer] - Adding field "javax.jdo.spi.StateManager jdoStateManager"
+01:04:09,411 (main) DEBUG [DataNucleus.Enhancer] - Adding field "byte jdoFlags"
+01:04:09,411 (main) DEBUG [DataNucleus.Enhancer] - Adding field "[B jdoFieldFlags"
+01:04:09,411 (main) DEBUG [DataNucleus.Enhancer] - Adding field "java.lang.Class jdoPersistenceCapableSuperclass"
+01:04:09,411 (main) DEBUG [DataNucleus.Enhancer] - Adding field "[Ljava.lang.Class; jdoFieldTypes"
+01:04:09,411 (main) DEBUG [DataNucleus.Enhancer] - Adding field "[Ljava.lang.String; jdoFieldNames"
+01:04:09,411 (main) DEBUG [DataNucleus.Enhancer] - Adding field "int jdoInheritedFieldCount"
+01:04:09,412 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void <clinit>()"
+01:04:09,412 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsFromObjectId(interface javax.jdo.spi.PersistenceCapable$ObjectIdFieldConsumer fc, class java.lang.Object oid)"
+01:04:09,412 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsFromObjectId(class java.lang.Object oid)"
+01:04:09,412 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsToObjectId(class java.lang.Object oid)"
+01:04:09,412 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyKeyFieldsToObjectId(interface javax.jdo.spi.PersistenceCapable$ObjectIdFieldSupplier fs, class java.lang.Object oid)"
+01:04:09,412 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoGetObjectId()"
+01:04:09,412 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoGetVersion()"
+01:04:09,412 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoPreSerialize()"
+01:04:09,412 (main) DEBUG [DataNucleus.Enhancer] - Adding method "javax.jdo.PersistenceManager jdoGetPersistenceManager()"
+01:04:09,413 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoGetTransactionalObjectId()"
+01:04:09,413 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsDeleted()"
+01:04:09,413 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsDirty()"
+01:04:09,413 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsNew()"
+01:04:09,413 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsPersistent()"
+01:04:09,413 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsTransactional()"
+01:04:09,413 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoMakeDirty(class java.lang.String fieldName)"
+01:04:09,413 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoNewObjectIdInstance()"
+01:04:09,413 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoNewObjectIdInstance(class java.lang.Object key)"
+01:04:09,413 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoProvideFields(class [I indices)"
+01:04:09,414 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceFields(class [I indices)"
+01:04:09,414 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceFlags()"
+01:04:09,414 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceStateManager(interface javax.jdo.spi.StateManager sm)"
+01:04:09,414 (main) DEBUG [DataNucleus.Enhancer] - Adding method "boolean jdoIsDetached()"
+01:04:09,414 (main) DEBUG [DataNucleus.Enhancer] - Adding method "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm)"
+01:04:09,414 (main) DEBUG [DataNucleus.Enhancer] - Adding method "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm, class java.lang.Object obj)"
+01:04:09,415 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoReplaceField(int index)"
+01:04:09,415 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoProvideField(int index)"
+01:04:09,415 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyField(class dom.farmacia.CorreoElectronico obj, int index)"
+01:04:09,415 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoCopyFields(class java.lang.Object obj, class [I indices)"
+01:04:09,415 (main) DEBUG [DataNucleus.Enhancer] - Adding method "[Ljava.lang.String; __jdoFieldNamesInit()"
+01:04:09,415 (main) DEBUG [DataNucleus.Enhancer] - Adding method "[Ljava.lang.Class; __jdoFieldTypesInit()"
+01:04:09,415 (main) DEBUG [DataNucleus.Enhancer] - Adding method "[B __jdoFieldFlagsInit()"
+01:04:09,415 (main) DEBUG [DataNucleus.Enhancer] - Adding method "int __jdoGetInheritedFieldCount()"
+01:04:09,415 (main) DEBUG [DataNucleus.Enhancer] - Adding method "int jdoGetManagedFieldCount()"
+01:04:09,415 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Class __jdoPersistenceCapableSuperclassInit()"
+01:04:09,416 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Class ___jdo$loadClass(class java.lang.String className)"
+01:04:09,416 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.Object jdoSuperClone()"
+01:04:09,416 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.String jdoGetdescripcion(class dom.farmacia.CorreoElectronico objPC)"
+01:04:09,416 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetdescripcion(class dom.farmacia.CorreoElectronico objPC, class java.lang.String val)"
+01:04:09,416 (main) DEBUG [DataNucleus.Enhancer] - Adding method "java.lang.String jdoGetdireccion(class dom.farmacia.CorreoElectronico objPC)"
+01:04:09,416 (main) DEBUG [DataNucleus.Enhancer] - Adding method "void jdoSetdireccion(class dom.farmacia.CorreoElectronico objPC, class java.lang.String val)"
+01:04:09,417 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/home/mati89/workspace/org.ifes.FarmacoProyect/dom/target/classes/dom/farmacia/CorreoElectronico.class" with enhanced definition
+01:04:09,417 (main) DEBUG [DataNucleus.Enhancer] - Enhance of class "dom.farmacia.CorreoElectronico" completed
+01:04:09,417 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 5 classes. Timings : input=381 ms, enhance=124 ms, total=505 ms. Consult the log for full details
