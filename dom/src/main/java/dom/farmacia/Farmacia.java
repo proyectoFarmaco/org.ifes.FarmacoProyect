@@ -16,7 +16,7 @@ import com.google.common.base.Objects;
 
 @PersistenceCapable
 @ObjectType("Farmacia")
-@AutoComplete(repository=Farmacias.class, action="autoComplete")
+@AutoComplete(repository=RepoFarmacias.class, action="autoComplete")
 @javax.jdo.annotations.Queries({
 	@javax.jdo.annotations.Query(
             name="todo_all", language="JDOQL",  

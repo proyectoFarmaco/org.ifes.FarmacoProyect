@@ -16,7 +16,7 @@ import org.apache.isis.applib.annotation.ActionSemantics.Of;
 
 import dom.orden.ByCodFarmacia;
 @Named ("farmacias")
-public class Farmacias extends AbstractFactoryAndRepository{
+public class RepoFarmacias extends AbstractFactoryAndRepository{
 
 	@Named ("Consultar Cuenta Corriente")
 	public String consultaCuentaCorrente(@Named("Id de Farmacia")int idFarmacia)
