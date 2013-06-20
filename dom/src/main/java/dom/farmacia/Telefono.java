@@ -2,6 +2,7 @@ package dom.farmacia;
 
 import javax.jdo.annotations.IdentityType;
 
+import org.apache.isis.applib.DomainObjectContainer;
 import org.apache.isis.applib.annotation.ObjectType;
 
 @javax.jdo.annotations.PersistenceCapable(identityType=IdentityType.DATASTORE)
@@ -22,4 +23,10 @@ public class Telefono {
 	public void setNumTelefono(String numTelefono) {
 		this.numTelefono = numTelefono;
 	}
+	@SuppressWarnings("unused")
+    private DomainObjectContainer container;
+
+    public void setDomainObjectContainer(final DomainObjectContainer container) {
+        this.container = container;
+    }
 }

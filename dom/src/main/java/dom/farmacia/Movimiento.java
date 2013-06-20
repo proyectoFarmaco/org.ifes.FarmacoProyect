@@ -8,6 +8,7 @@ import java.util.Date;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.PrimaryKey;
 
+import org.apache.isis.applib.DomainObjectContainer;
 import org.apache.isis.applib.annotation.ObjectType;
 
 
@@ -74,4 +75,10 @@ public class Movimiento {
 		return "ultimos movimientos hasta "+formatoDeFecha.format(this.fechaMovimiento);
 	}
 	
+	@SuppressWarnings("unused")
+    private DomainObjectContainer container;
+
+    public void setDomainObjectContainer(final DomainObjectContainer container) {
+        this.container = container;
+    }
 }
