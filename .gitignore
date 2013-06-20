@@ -1,4 +1,11 @@
-target/
 */target/
 */target-ide/
 datanucleus.log
+.classpath
+.project
+.settings/
+target/
+target-ide/
+
+*.class
+*.jar
