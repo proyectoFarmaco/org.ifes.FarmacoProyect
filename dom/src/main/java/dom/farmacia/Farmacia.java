@@ -128,6 +128,15 @@ public class Farmacia {
 		
 		        };
 		    }
+	public static Filter<Farmacia> thoseById(final int codFarmacia) {
+        return new Filter<Farmacia>() {
+            @Override
+            public boolean accept(final Farmacia farmacia) {
+                return Objects.equal(farmacia.getCodfarmacia(),codFarmacia );
+            }
+
+        };
+    }
 	
 	@SuppressWarnings("unused")
     private DomainObjectContainer container;

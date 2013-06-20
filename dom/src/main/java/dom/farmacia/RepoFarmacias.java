@@ -21,7 +21,15 @@ public class RepoFarmacias extends AbstractFactoryAndRepository{
 	@Named ("Consultar Cuenta Corriente")
 	public String consultaCuentaCorrente(@Named("Id de Farmacia")int idFarmacia)
 	{
-		return "no se encontro ninguna farmacia en la base de datos";
+		final Farmacia farmacia = firstMatch(Farmacia.class,Farmacia.thoseById(idFarmacia));
+		if (farmacia!=null)
+		{
+		return "La farmacia "+farmacia.getNombre()+" tiene un saldo de "+farmacia.getSaldo()+" pesos";
+		}
+		else
+		{
+			return "la farmacia no existe en la base de datos";
+		}
 	}
 	
 	/**
@@ -36,6 +44,7 @@ public class RepoFarmacias extends AbstractFactoryAndRepository{
 	 @ActionSemantics(Of.SAFE)
 	     @MemberOrder(sequence = "1")
 	     public List<Farmacia> ListaFarmacias() {
+		 
 	         final String currentUser = currentUserName();
 	         final List<Farmacia> items = allMatches(Farmacia.class, Farmacia.thoseOwnedBy(currentUser));
 	         Collections.sort(items,new ByCodFarmacia() );
