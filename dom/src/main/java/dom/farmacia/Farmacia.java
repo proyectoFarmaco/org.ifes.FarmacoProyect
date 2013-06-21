@@ -2,12 +2,13 @@ package dom.farmacia;
 
 import java.util.List;
 
+import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.PrimaryKey;
+import javax.jdo.annotations.Unique;
 
 import org.apache.isis.applib.DomainObjectContainer;
 import org.apache.isis.applib.annotation.AutoComplete;
-import org.apache.isis.applib.annotation.Hidden;
 import org.apache.isis.applib.annotation.ObjectType;
 import org.apache.isis.applib.annotation.Optional;
 import org.apache.isis.applib.filter.Filter;
@@ -24,7 +25,8 @@ import com.google.common.base.Objects;
 			)
 })
 public class Farmacia {
-	@PrimaryKey
+	
+	@Unique
     private int codFarmacia; 
     private String nombre;
     private String direccion;
@@ -38,7 +40,7 @@ public class Farmacia {
     private List<Telefono> telefono;
     private List<CorreoElectronico> listaCorreoElectronico;
     
-    @Optional    
+    @Optional
 	public List<CorreoElectronico> getListaCorreoElectronico() {
 		return listaCorreoElectronico;
 	}

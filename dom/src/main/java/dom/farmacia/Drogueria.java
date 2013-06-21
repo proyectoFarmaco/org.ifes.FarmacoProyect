@@ -39,8 +39,12 @@ public class Drogueria {
 	@SuppressWarnings("unused")
     private DomainObjectContainer container;
 
-    public void setDomainObjectContainer(final DomainObjectContainer container) {
-        this.container = container;
-    }
+	public DomainObjectContainer getContainer() {
+		return container;
+	}
+	public void setContainer(DomainObjectContainer container) {
+		this.container = container;
+	}
+
 
 }
