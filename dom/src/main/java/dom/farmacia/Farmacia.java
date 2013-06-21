@@ -2,9 +2,7 @@ package dom.farmacia;
 
 import java.util.List;
 
-import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
-import javax.jdo.annotations.PrimaryKey;
 import javax.jdo.annotations.Unique;
 
 import org.apache.isis.applib.DomainObjectContainer;

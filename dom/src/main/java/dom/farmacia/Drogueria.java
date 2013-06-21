@@ -36,7 +36,7 @@ public class Drogueria {
 		return this.nombre;
 	}
 	
-	@SuppressWarnings("unused")
+
     private DomainObjectContainer container;
 
 	public DomainObjectContainer getContainer() {
