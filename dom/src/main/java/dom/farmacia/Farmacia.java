@@ -2,6 +2,7 @@ package dom.farmacia;
 
 import java.util.List;
 
+import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Unique;
 
@@ -52,12 +53,16 @@ public class Farmacia {
 		return telefono;
 	}
 	
-	
+	@Join
 	public List<Movimiento> getMovimientos() {
 		return movimientos;
 	}
 	
 	
+	public void setMovimientos(List<Movimiento> movimientos) {
+		this.movimientos = movimientos;
+	}
+
 	public List<Drogueria> getDroguerias() {
 		return droguerias;
 	}
