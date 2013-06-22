@@ -26,22 +26,14 @@ public class Movimiento {
 	public TipoMovimiento getTipoMovimiento() {
 		return tipoMovimiento;
 	}
-	public void setTipoMovimiento(TipoMovimiento tipoMovimiento) {
-		this.tipoMovimiento = tipoMovimiento;
-	}
 	public int getNumMovimiento() {
 		return numMovimiento;
-	}
-	public void setNumMovimiento(int numMovimiento) {
-		this.numMovimiento = numMovimiento;
 	}
 	
 	public Date getFechaMovimiento() {
 		return fechaMovimiento;
 	}
-	public void setFechaMovimiento(Date fechaMovimiento) {
-		this.fechaMovimiento = fechaMovimiento;
-	}
+	
 	public Movimiento() {
 		super();
 		this.numMovimiento = 1;
@@ -59,16 +51,12 @@ public class Movimiento {
 	public String getConcepMovimiento() {
 		return concepMovimiento;
 	}
-	public void setConcepMovimiento(String concepMovimiento) {
-		this.concepMovimiento = concepMovimiento;
-	}
+	
 
 	public float getMontoMovimiento() {
 		return montoMovimiento;
 	}
-	public void setMontoMovimiento(float montoMovimiento) {
-		this.montoMovimiento = montoMovimiento;
-	}
+	
 	public String title()
 	{
 		SimpleDateFormat formatoDeFecha = new SimpleDateFormat("dd/MM/yyyy");
