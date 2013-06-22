@@ -26,4 +26,8 @@ public class CorreoElectronico {
         this.container = container;
     }
 	
+    public String title()
+    {
+    	return this.descripcion;
+    }
 }

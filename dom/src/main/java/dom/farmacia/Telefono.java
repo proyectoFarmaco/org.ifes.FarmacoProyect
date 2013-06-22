@@ -25,4 +25,8 @@ public class Telefono {
     public void setDomainObjectContainer(final DomainObjectContainer container) {
         this.container = container;
     }
+    public String title()
+    {
+    	return this.descripcion;
+    }
 }
