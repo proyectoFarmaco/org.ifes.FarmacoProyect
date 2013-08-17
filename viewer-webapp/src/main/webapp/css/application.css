@@ -30,3 +30,13 @@ uncomment to add a logo (in an ../images directory relative to this file)
 	display: none;
 }
 */
+#header {
+    height: 100px;
+    background-image: url("");
+}
+
+.headerContainer {
+	background-color: #000000;
+	background-image: url("../images/verde.jpg");
+}
+
