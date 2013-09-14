@@ -8,8 +8,7 @@ import javax.jdo.annotations.Unique;
 
 import org.apache.isis.applib.DomainObjectContainer;
 import org.apache.isis.applib.annotation.AutoComplete;
-import org.apache.isis.applib.annotation.Disabled;
-import org.apache.isis.applib.annotation.Hidden;
+
 import org.apache.isis.applib.annotation.ObjectType;
 import org.apache.isis.applib.annotation.Optional;
 import org.apache.isis.applib.filter.Filter;
@@ -62,11 +61,15 @@ public class Farmacia {
 	public void setMovimientos(List<Movimiento> movimientos) {
 		this.movimientos = movimientos;
 	}
-
+	@Join
 	public List<Drogueria> getDroguerias() {
 		return droguerias;
 	}
 	
+	public void setDroguerias(List<Drogueria> droguerias) {
+		this.droguerias = droguerias;
+	}
+
 	public int getCodfarmacia() {
 		return codFarmacia;
 	}
