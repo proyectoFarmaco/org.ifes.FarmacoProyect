@@ -7,7 +7,8 @@ import org.apache.isis.applib.annotation.ActionSemantics;
 import org.apache.isis.applib.annotation.MemberOrder;
 import org.apache.isis.applib.annotation.ActionSemantics.Of;
 
-import dom.farmacia.login.Autorizacion;
+import dom.farmacia.login.Permiso;
+import dom.farmacia.login.Roles;
 
 
 
@@ -28,10 +29,10 @@ public class RepoAutorizacion extends AbstractFactoryAndRepository{
     }
 	 @ActionSemantics(Of.SAFE)
      @MemberOrder(sequence = "1")
-     public List<Autorizacion> ListaFarmacias() {
+     public List<Permiso> ListaPermiso() {
 	 
          final String currentUser = currentUserName();
-         final List<Autorizacion> items = allMatches(Autorizacion.class, Autorizacion.thoseOwnedBy(currentUser));
+         final List<Permiso> items = allMatches(Permiso.class, Permiso.thoseOwnedBy(currentUser));
          
          return items;
      }

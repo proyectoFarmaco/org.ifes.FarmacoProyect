@@ -1,50 +1,73 @@
 package dom.farmacia.login;
 
-import java.util.List;
+
+
+
 
 import javax.jdo.annotations.IdentityType;
 
 
+
+
+
 import org.apache.isis.applib.DomainObjectContainer;
+
 import org.apache.isis.applib.annotation.AutoComplete;
 import org.apache.isis.applib.annotation.ObjectType;
 import org.apache.isis.applib.filter.Filter;
 
+import repo.farmacia.login.RepoAutorizacion;
+
+
 import com.google.common.base.Objects;
 
-import repo.farmacia.login.RepoAutorizacion;
+import dom.farmacia.Farmacia;
 
 
 
 @javax.jdo.annotations.PersistenceCapable(identityType=IdentityType.DATASTORE)
-@ObjectType("Autorizacion")
+@ObjectType("Permisos")
 @AutoComplete(repository=RepoAutorizacion.class, action="autoComplete")
-public class Autorizacion {
-    private Usuario usuario;
-    private List<Privilegios> privilegios;
-	public Usuario getUsuario() {
-		return usuario;
-	}
-	public void setUsuario(Usuario usuario) {
-		this.usuario = usuario;
-	}
-	public List<Privilegios> getPrivilegios() {
-		return privilegios;
-	}
-	public void setPrivilegios(List<Privilegios> privilegios) {
-		this.privilegios = privilegios;
-	}
+public class Permiso {
+    private Usuario user;
+    private Roles rol;
+	private Farmacia farmacia;
 	
-	public static Filter<Autorizacion> thoseOwnedBy(final String currentUser) {
-        return new Filter<Autorizacion>() {
+	
+	public Usuario getUser() {
+		return user;
+	}
+
+	public void setUser(Usuario user) {
+		this.user = user;
+	}
+
+	public Roles getRol() {
+		return rol;
+	}
+
+	public void setRol(Roles rol) {
+		this.rol = rol;
+	}
+
+	public Farmacia getFarmacia() {
+		return farmacia;
+	}
+
+	public void setFarmacia(Farmacia farmacia) {
+		this.farmacia = farmacia;
+	}
+
+	public static Filter<Permiso> thoseOwnedBy(final String currentUser) {
+        return new Filter<Permiso>() {
             @Override
-            public boolean accept(final Autorizacion autorizacion) {
+            public boolean accept(final Permiso autorizacion) {
                 return Objects.equal("sven", currentUser);
             }
 
         };
-    }
-	
+	}
+    
 	
 	@SuppressWarnings("unused")
     private DomainObjectContainer container;
