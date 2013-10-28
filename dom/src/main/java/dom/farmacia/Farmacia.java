@@ -13,6 +13,10 @@ import org.apache.isis.applib.annotation.ObjectType;
 import org.apache.isis.applib.annotation.Optional;
 import org.apache.isis.applib.filter.Filter;
 
+
+
+
+
 import com.google.common.base.Objects;
 
 @PersistenceCapable
@@ -21,7 +25,7 @@ import com.google.common.base.Objects;
 @javax.jdo.annotations.Queries({
 	@javax.jdo.annotations.Query(
             name="todo_all", language="JDOQL",  
-            value="SELECT FROM dom.farmacia.Farmacia"
+            value="SELECT FROM Farmacia"
 			)
 })
 
@@ -99,20 +103,36 @@ public class Farmacia {
 	public float getSaldo() {
 		return saldo;
 	}
+	/**
+	 * muestra en la GUI
+	 * como titulo el nombre de la farmacia
+	 * @return
+	 */
 	public String title()
 	{
 		return this.nombre;
 	}
+	/**
+	 * Filtrar las farmacias
+	 * a consultar
+	 * @param currentUser
+	 * @return
+	 */
 	
 	public static Filter<Farmacia> thoseOwnedBy(final String currentUser) {
-		        return new Filter<Farmacia>() {
+	         
+					
+					
+			return new Filter<Farmacia>() {
 		            @Override
-		            public boolean accept(final Farmacia farmacia) {
-		                return Objects.equal("sven", currentUser);
+		            public boolean accept(final Farmacia farmacia){
+		            	
+		            	return Objects.equal("sven", currentUser);
 		            }
 		
 		        };
 		    }
+	
 	public static Filter<Farmacia> thoseById(final int codFarmacia) {
         return new Filter<Farmacia>() {
             @Override

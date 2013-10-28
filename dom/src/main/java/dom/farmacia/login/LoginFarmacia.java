@@ -1,42 +1,45 @@
 package dom.farmacia.login;
-import java.nio.file.DirectoryStream.Filter;
-import java.util.Collections;
-import java.util.List;
-
-import javax.jdo.annotations.IdentityType;
 
 
-import org.apache.isis.applib.DomainObjectContainer;
-import org.apache.isis.applib.annotation.ActionSemantics;
+
+
+import javax.jdo.annotations.PersistenceCapable;
+
 import org.apache.isis.applib.annotation.AutoComplete;
-import org.apache.isis.applib.annotation.MemberOrder;
 import org.apache.isis.applib.annotation.ObjectType;
-import org.apache.isis.applib.annotation.ActionSemantics.Of;
+import org.apache.isis.applib.filter.Filter;
 
 import com.google.common.base.Objects;
+import dom.farmacia.Farmacia;
+
 
 import repo.farmacia.login.RepoAutorizacion;
 
-
-import dom.farmacia.Farmacia;
-import dom.orden.ByCodFarmacia;
-
-
-@javax.jdo.annotations.PersistenceCapable(identityType=IdentityType.DATASTORE)
+@PersistenceCapable
 @ObjectType("LOGIN_FARMACIA")
 @AutoComplete(repository=RepoAutorizacion.class, action="autoComplete")
+@javax.jdo.annotations.Queries({
+	@javax.jdo.annotations.Query(
+            name="todo_all", language="JDOQL",  
+            value="SELECT FROM LoginFarmacia"
+			)
+})
 
 
-public class LoginFarmacia  {
-private Farmacia farmacia;
+public class LoginFarmacia implements ILogin {
+
 
 private String user;
 private String password;
+private Farmacia farmacia;
+public Farmacia getFarmacia() {
+	return farmacia;
+}
+public void setFarmacia(Farmacia farmacia) {
+	this.farmacia = farmacia;
+}
 public String getUser() {
 	return user;
-}
-public void setUser(String user) {
-	this.user = user;
 }
 public String getPassword() {
 	return password;
@@ -45,22 +48,16 @@ public void setPassword(String password) {
 	this.password = password;
 }
 
+public static Filter<LoginFarmacia> thoseOwnedBy(final String currentUser) {
+    return new Filter<LoginFarmacia>() {
+        @Override
+        public boolean accept(final LoginFarmacia farmacia) {
+        	
+            return Objects.equal(farmacia.user, currentUser);
+        }
 
-
-    
-    @SuppressWarnings("unused")
-private DomainObjectContainer container;
-
-public void setDomainObjectContainer(final DomainObjectContainer container) {
-    this.container = container;
+    };
 }
 
-public Farmacia getFarmacia() {
-	return farmacia;
-}
-
-public void setFarmacia(Farmacia farmacia) {
-	this.farmacia = farmacia;
-}
 
 }

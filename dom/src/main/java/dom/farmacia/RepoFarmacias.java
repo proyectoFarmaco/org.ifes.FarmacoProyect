@@ -1,7 +1,6 @@
 package dom.farmacia;
 
 
-import java.util.Collections;
 
 
 import java.util.List;
@@ -12,7 +11,10 @@ import org.apache.isis.applib.annotation.ActionSemantics;
 import org.apache.isis.applib.annotation.MemberOrder;
 import org.apache.isis.applib.annotation.ActionSemantics.Of;
 
-import dom.orden.ByCodFarmacia;
+import dom.farmacia.login.LoginColegio;
+import dom.farmacia.login.LoginFarmacia;
+
+
 @Named ("farmacias")
 public class RepoFarmacias extends AbstractFactoryAndRepository{
 
@@ -44,9 +46,12 @@ public class RepoFarmacias extends AbstractFactoryAndRepository{
 	     public List<Farmacia> ListaFarmacias() {
 		 
 	         final String currentUser = currentUserName();
+	         
 	         final List<Farmacia> items = allMatches(Farmacia.class, Farmacia.thoseOwnedBy(currentUser));
-	         Collections.sort(items,new ByCodFarmacia() );
+	         //Collections.sort(items,new ByCodFarmacia() );
 	         return items;
 	     }
+	 
+	
 
 }

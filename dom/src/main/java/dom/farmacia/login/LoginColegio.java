@@ -1,35 +1,35 @@
 package dom.farmacia.login;
 
-import java.nio.file.DirectoryStream.Filter;
 
-import javax.jdo.annotations.IdentityType;
 
-import org.apache.isis.applib.DomainObjectContainer;
+import javax.jdo.annotations.PersistenceCapable;
+
 import org.apache.isis.applib.annotation.AutoComplete;
 import org.apache.isis.applib.annotation.ObjectType;
+import org.apache.isis.applib.filter.Filter;
 
 import com.google.common.base.Objects;
 
 
-
-
-
-
 import repo.farmacia.login.RepoAutorizacion;
 
-@javax.jdo.annotations.PersistenceCapable(identityType=IdentityType.DATASTORE)
+@PersistenceCapable
 @ObjectType("LOGIN_COLEGIO")
 @AutoComplete(repository=RepoAutorizacion.class, action="autoComplete")
+@javax.jdo.annotations.Queries({
+	@javax.jdo.annotations.Query(
+            name="todo_all", language="JDOQL",  
+            value="SELECT FROM LoginColegio"
+			)
+})
 
-public class LoginColegio {
+
+
+public class LoginColegio implements ILogin {
 	private String user;
 	private String password;
-
 	public String getUser() {
 		return user;
-	}
-	public void setUser(String user) {
-		this.user = user;
 	}
 	public String getPassword() {
 		return password;
@@ -43,21 +43,11 @@ public class LoginColegio {
             @Override
             public boolean accept(final LoginColegio farmacia) {
             	
-                return Objects.equal("sven", currentUser);
+                return Objects.equal(farmacia.user, currentUser);
             }
 
         };
     }
-
-	public String title()
-	{
-		return user;
-	}	    
-	   
-	@SuppressWarnings("unused")
-	private DomainObjectContainer container;
-
-	public void setDomainObjectContainer(final DomainObjectContainer container) {
-	    this.container = container;
-	}
+	
+	
 }

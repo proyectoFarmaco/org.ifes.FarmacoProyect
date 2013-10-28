@@ -1,9 +1,11 @@
 package repo.farmacia.login;
 
+import java.nio.file.DirectoryStream.Filter;
 import java.util.Collections;
 
 
 import java.util.List;
+
 
 import org.apache.isis.applib.AbstractFactoryAndRepository;
 import org.apache.isis.applib.annotation.Named;
@@ -11,9 +13,8 @@ import org.apache.isis.applib.annotation.ActionSemantics;
 import org.apache.isis.applib.annotation.MemberOrder;
 import org.apache.isis.applib.annotation.ActionSemantics.Of;
 
+import dom.farmacia.Farmacia;
 import dom.farmacia.login.LoginColegio;
-
-
 
 
 
@@ -31,17 +32,18 @@ public class RepoAutorizacion extends AbstractFactoryAndRepository{
 	 * @return lista de farmacias
 	 */
 
-   /* protected String currentUserName() {
+    protected String currentUserName() {
         return getContainer().getUser().getName();
     }
-	 @ActionSemantics(Of.SAFE)
-	     @MemberOrder(sequence = "1")
-	     public List<LoginColegio> ListaFarmacias() {
-		 
-	         final String currentUser = currentUserName();
-	         final List<LoginColegio> items = allMatches(LoginColegio.class, LoginColegio.thoseOwnedBy(currentUser));
-	         return items;
-	     }*/
+    @ActionSemantics(Of.SAFE)
+    @MemberOrder(sequence = "1")
+    public List<LoginColegio> ListaFarmacias() {
+	 
+        final String currentUser = currentUserName();
+        final List<LoginColegio> items= allMatches(LoginColegio.class,LoginColegio.thoseOwnedBy(currentUser));
+        return items;
+    }
+	
 	
 	
 	
