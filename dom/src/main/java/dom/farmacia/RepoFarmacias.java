@@ -10,27 +10,17 @@ import org.apache.isis.applib.annotation.Named;
 import org.apache.isis.applib.annotation.ActionSemantics;
 import org.apache.isis.applib.annotation.MemberOrder;
 import org.apache.isis.applib.annotation.ActionSemantics.Of;
+import org.apache.isis.applib.query.QueryDefault;
 
-import dom.farmacia.login.LoginColegio;
 import dom.farmacia.login.LoginFarmacia;
+
+
+
 
 
 @Named ("farmacias")
 public class RepoFarmacias extends AbstractFactoryAndRepository{
 
-	@Named ("Consultar Cuenta Corriente")
-	public String consultaCuentaCorrente(@Named("Id de Farmacia")int idFarmacia)
-	{
-		final Farmacia farmacia = firstMatch(Farmacia.class,Farmacia.thoseById(idFarmacia));
-		if (farmacia!=null)
-		{
-		return "La farmacia "+farmacia.getNombre()+" tiene un saldo de "+farmacia.getSaldo()+" pesos";
-		}
-		else
-		{
-			return "la farmacia no existe en la base de datos";
-		}
-	}
 	
 	/**
 	 * metodo que trae las farmacias de ejemplo
@@ -41,17 +31,31 @@ public class RepoFarmacias extends AbstractFactoryAndRepository{
     protected String currentUserName() {
         return getContainer().getUser().getName();
     }
-	 @ActionSemantics(Of.SAFE)
+	
+	@ActionSemantics(Of.SAFE)
 	     @MemberOrder(sequence = "1")
 	     public List<Farmacia> ListaFarmacias() {
 		 
-	         final String currentUser = currentUserName();
 	         
-	         final List<Farmacia> items = allMatches(Farmacia.class, Farmacia.thoseOwnedBy(currentUser));
-	         //Collections.sort(items,new ByCodFarmacia() );
+	         if (getContainer().getUser().getName().equals("sven"))//Codigo duro (hardcoded) se debe hacer de otra forma
+	         {
+	         List<Farmacia> items = allMatches(new QueryDefault<Farmacia>(Farmacia.class,"traer_todas_las_farmacias"));
 	         return items;
+	         }
+	         else
+	         {
+	        	 LoginFarmacia loginfarmacia = firstMatch(new QueryDefault<LoginFarmacia>(LoginFarmacia.class,"obtener_usuario","user",currentUserName()));
+	        	 List<Farmacia> items = allMatches(new QueryDefault<Farmacia>(Farmacia.class,"farmacia_por_codigo_de_farmacia","codfarmacia",loginfarmacia.getFarmacia().getCodfarmacia()));
+		         return items; 
+	         }
+	         
+	       
+	         
+	       
 	     }
-	 
+        
 	
+	 
+
 
 }

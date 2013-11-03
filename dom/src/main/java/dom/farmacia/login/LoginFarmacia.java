@@ -20,13 +20,17 @@ import repo.farmacia.login.RepoAutorizacion;
 @AutoComplete(repository=RepoAutorizacion.class, action="autoComplete")
 @javax.jdo.annotations.Queries({
 	@javax.jdo.annotations.Query(
-            name="todo_all", language="JDOQL",  
-            value="SELECT FROM LoginFarmacia"
+            name="obtener_usuario", language="JDOQL",  
+            value="SELECT FROM dom.farmacia.login.LoginFarmacia where user==:user"
+			),
+	@javax.jdo.annotations.Query(
+		    name="obtener_farmacia_vinculada", language="JDOQL",  
+		    value="SELECT Farmacia FROM dom.farmacia.login.LoginColegio where user==:user"
 			)
+	
 })
 
-
-public class LoginFarmacia implements ILogin {
+public class LoginFarmacia {
 
 
 private String user;

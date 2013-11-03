@@ -11,21 +11,22 @@ import org.apache.isis.applib.annotation.AutoComplete;
 
 import org.apache.isis.applib.annotation.ObjectType;
 import org.apache.isis.applib.annotation.Optional;
-import org.apache.isis.applib.filter.Filter;
-
-
-
-
-
-import com.google.common.base.Objects;
 
 @PersistenceCapable
 @ObjectType("Farmacia")
 @AutoComplete(repository=RepoFarmacias.class, action="autoComplete")
 @javax.jdo.annotations.Queries({
 	@javax.jdo.annotations.Query(
-            name="todo_all", language="JDOQL",  
-            value="SELECT FROM Farmacia"
+            name="traer_todas_las_farmacias", language="JDOQL",  
+            value="SELECT FROM dom.farmacia.Farmacia"
+			),
+	@javax.jdo.annotations.Query(
+            name="farmacia_por_nombre", language="JDOQL",  
+            value="SELECT FROM dom.farmacia.Farmacia WHERE nombre == :nombre"
+			),
+	@javax.jdo.annotations.Query(
+            name="farmacia_por_codigo_de_farmacia", language="JDOQL",  
+            value="SELECT FROM dom.farmacia.Farmacia WHERE codFarmacia == :codfarmacia"
 			)
 })
 
@@ -119,29 +120,7 @@ public class Farmacia {
 	 * @return
 	 */
 	
-	public static Filter<Farmacia> thoseOwnedBy(final String currentUser) {
-	         
-					
-					
-			return new Filter<Farmacia>() {
-		            @Override
-		            public boolean accept(final Farmacia farmacia){
-		            	
-		            	return Objects.equal("sven", currentUser);
-		            }
-		
-		        };
-		    }
-	
-	public static Filter<Farmacia> thoseById(final int codFarmacia) {
-        return new Filter<Farmacia>() {
-            @Override
-            public boolean accept(final Farmacia farmacia) {
-                return Objects.equal(farmacia.getCodfarmacia(),codFarmacia );
-            }
 
-        };
-    }
 	
 	@SuppressWarnings("unused")
     private DomainObjectContainer container;

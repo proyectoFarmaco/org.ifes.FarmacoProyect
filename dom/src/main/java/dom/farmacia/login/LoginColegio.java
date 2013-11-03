@@ -18,14 +18,16 @@ import repo.farmacia.login.RepoAutorizacion;
 @AutoComplete(repository=RepoAutorizacion.class, action="autoComplete")
 @javax.jdo.annotations.Queries({
 	@javax.jdo.annotations.Query(
-            name="todo_all", language="JDOQL",  
-            value="SELECT FROM LoginColegio"
+            name="obtener_usuario", language="JDOQL",  
+            value="SELECT FROM dom.farmacia.login.LoginColegio where user==:user"
 			)
+	
+	
 })
 
 
 
-public class LoginColegio implements ILogin {
+public class LoginColegio {
 	private String user;
 	private String password;
 	public String getUser() {
