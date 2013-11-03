@@ -12,6 +12,7 @@ import org.apache.isis.applib.annotation.MemberOrder;
 import org.apache.isis.applib.annotation.ActionSemantics.Of;
 import org.apache.isis.applib.query.QueryDefault;
 
+
 import dom.farmacia.login.LoginFarmacia;
 
 
@@ -36,8 +37,8 @@ public class RepoFarmacias extends AbstractFactoryAndRepository{
 	     @MemberOrder(sequence = "1")
 	     public List<Farmacia> ListaFarmacias() {
 		 
-	         
-	         if (getContainer().getUser().getName().equals("sven"))//Codigo duro (hardcoded) se debe hacer de otra forma
+		
+	         if (currentUserName().equals("sven"))//Codigo duro (hardcoded) se debe hacer de otra forma
 	         {
 	         List<Farmacia> items = allMatches(new QueryDefault<Farmacia>(Farmacia.class,"traer_todas_las_farmacias"));
 	         return items;
@@ -49,11 +50,24 @@ public class RepoFarmacias extends AbstractFactoryAndRepository{
 		         return items; 
 	         }
 	         
-	       
-	         
-	       
 	     }
-        
+    @Named("ver saldo a la fecha")
+	public String versaldo()
+	{
+    	LoginFarmacia loginfarmacia = firstMatch(new QueryDefault<LoginFarmacia>(LoginFarmacia.class,"obtener_usuario","user",currentUserName()));
+    	if (currentUserName().equals("sven"))//Codigo duro (hardcoded) se debe hacer de otra forma
+        {
+    		return "el colegio de farmaceuticos no posee saldo ";
+        }
+    	else
+    	{
+    		Farmacia items = firstMatch(new QueryDefault<Farmacia>(Farmacia.class,"farmacia_por_codigo_de_farmacia","codfarmacia",loginfarmacia.getFarmacia().getCodfarmacia()));
+    		
+    		return "el saldo de la farmacia es: "+items.getSaldo();
+    	}
+	}
+	
+	
 	
 	 
 

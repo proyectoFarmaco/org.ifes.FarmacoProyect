@@ -28,6 +28,7 @@ import org.apache.isis.applib.annotation.Optional;
             name="farmacia_por_codigo_de_farmacia", language="JDOQL",  
             value="SELECT FROM dom.farmacia.Farmacia WHERE codFarmacia == :codfarmacia"
 			)
+	
 })
 
 public class Farmacia {
