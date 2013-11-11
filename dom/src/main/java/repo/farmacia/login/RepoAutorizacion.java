@@ -3,7 +3,7 @@ package repo.farmacia.login;
 
 
 
-import java.util.List;
+
 
 
 import org.apache.isis.applib.AbstractFactoryAndRepository;
@@ -27,25 +27,32 @@ import dom.farmacia.login.LoginFarmacia;
 public class RepoAutorizacion extends AbstractFactoryAndRepository{
 
 	/**
-	 * metodo que trae la lista de Usuarios 
-	 * para modificar las contraseñas
-	 * TODO persistencia
-	 * @return lista de farmacias
+	 * metodo que obtiene el usuario actual logeado
+	 * @return usuario actual logeado
 	 */
 
     protected String currentUserName() {
         return getContainer().getUser().getName();
     }
+    
+    /**
+	 * metodo que trae el loggin del colegio para
+	 * para poder modificar las contraseñas
+	 * TODO persistencia
+	 * @return Farmacia
+	 */
+    
     @ActionSemantics(Of.SAFE)
     @MemberOrder(sequence = "1")
-    public List<LoginColegio> ModificarMiContrasena() {
+    public LoginColegio ModificarMiContrasena() {
 	 
         final String currentUser = currentUserName();
-        final List<LoginColegio> items= allMatches(LoginColegio.class,LoginColegio.thoseOwnedBy(currentUser));
+        final LoginColegio items= firstMatch(LoginColegio.class,LoginColegio.thoseOwnedBy(currentUser));
         
         
         return items;
     }
+    
     /**
 	 * metodo que trae la lista de Usuarios 
 	 * para modificar las contraseñas
@@ -55,10 +62,10 @@ public class RepoAutorizacion extends AbstractFactoryAndRepository{
     @ActionSemantics(Of.SAFE)
     @MemberOrder(sequence = "2")
     @Named("Modificar Contraseña")
-    public List<LoginFarmacia> modificarContrasena() {
+    public LoginFarmacia modificarContrasena() {
    	 
         final String currentUser = currentUserName();
-        final List<LoginFarmacia> item= allMatches(new QueryDefault<LoginFarmacia>(LoginFarmacia.class,"obtener_usuario","user",currentUser));
+        final LoginFarmacia item= firstMatch(new QueryDefault<LoginFarmacia>(LoginFarmacia.class,"obtener_usuario","user",currentUser));
         
         
         return item;

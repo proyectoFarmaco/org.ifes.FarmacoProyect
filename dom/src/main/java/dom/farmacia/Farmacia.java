@@ -9,6 +9,7 @@ import javax.jdo.annotations.Unique;
 import org.apache.isis.applib.DomainObjectContainer;
 import org.apache.isis.applib.annotation.AutoComplete;
 
+import org.apache.isis.applib.annotation.Named;
 import org.apache.isis.applib.annotation.ObjectType;
 import org.apache.isis.applib.annotation.Optional;
 
@@ -110,17 +111,24 @@ public class Farmacia {
 	 * como titulo el nombre de la farmacia
 	 * @return
 	 */
+	
 	public String title()
 	{
 		return this.nombre;
 	}
+	
 	/**
 	 * Filtrar las farmacias
 	 * a consultar
 	 * @param currentUser
 	 * @return
 	 */
-	
+
+	@Named("agregar nuevo mail a la farmacia")
+	public String agregarMail(final String nuevoMail) {
+        return nuevoMail;
+    }
+
 
 	
 	@SuppressWarnings("unused")

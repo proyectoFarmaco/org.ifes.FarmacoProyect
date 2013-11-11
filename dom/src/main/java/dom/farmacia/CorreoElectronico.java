@@ -25,7 +25,13 @@ public class CorreoElectronico {
     public void setDomainObjectContainer(final DomainObjectContainer container) {
         this.container = container;
     }
-	
+    /**
+     * retorna en el titulo la 
+     * descripción de Correo Electronico de la farmacia
+     * en la GUI 
+     * 
+     * @return 
+     */
     public String title()
     {
     	return this.descripcion;
