@@ -32,7 +32,15 @@ public class RepoFarmacias extends AbstractFactoryAndRepository{
     protected String currentUserName() {
         return getContainer().getUser().getName();
     }
-	
+	/**
+	 * muestra la lista
+	 * de farmacias en caso que sea el Colegio
+	 * muestra todas las farmacias
+	 * y en caso de un usuario de una Farmacia 
+	 * devuelve una sola Farmacia que
+	 * es la vinculada al usuario.
+	 * @return lista de farmacias vinculadas
+	 */
 	@ActionSemantics(Of.SAFE)
 	     @MemberOrder(sequence = "1")
 	     public List<Farmacia> ListaFarmacias() {

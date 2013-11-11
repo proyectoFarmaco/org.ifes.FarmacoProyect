@@ -39,7 +39,11 @@ public class Movimiento {
 	public float getMontoMovimiento() {
 		return montoMovimiento;
 	}
-	
+	/**
+	 * Muestra en Titulo de  la GUI la ultima
+	 * fecha de los movimientos
+	 * @return muestra la fecha del movimiento  
+	 */
 	public String title()
 	{
 		SimpleDateFormat formatoDeFecha = new SimpleDateFormat("dd/MM/yyyy");
