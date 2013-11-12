@@ -64,6 +64,10 @@ public class Farmacia {
 		return movimientos;
 	}
 	
+	public String nuevoCorreo(@Named("descripcion") String descripcion,@Named("mail")String mail)
+	{
+		return "Nuevo Correo añadido a la Farmacia";
+	}
 	
 	public void setMovimientos(List<Movimiento> movimientos) {
 		this.movimientos = movimientos;

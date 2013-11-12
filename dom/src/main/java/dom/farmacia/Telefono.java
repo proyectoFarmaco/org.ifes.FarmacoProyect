@@ -15,6 +15,10 @@ public class Telefono {
 		return descripcion;
 	}
 	
+	public void setNumTelefono(String numTelefono) {
+		this.numTelefono = numTelefono;
+	}
+
 	public String getNumTelefono() {
 		return numTelefono;
 	}
