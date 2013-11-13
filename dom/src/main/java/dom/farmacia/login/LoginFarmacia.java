@@ -3,6 +3,8 @@ package dom.farmacia.login;
 
 
 
+import javax.jdo.annotations.Embedded;
+import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
 
 import org.apache.isis.applib.annotation.AutoComplete;
@@ -27,6 +29,7 @@ import repo.farmacia.login.RepoAutorizacion;
 		    name="obtener_farmacia_vinculada", language="JDOQL",  
 		    value="SELECT Farmacia FROM dom.farmacia.login.LoginColegio where user==:user"
 			)
+
 	
 })
 
@@ -36,6 +39,7 @@ public class LoginFarmacia {
 private String user;
 private String password;
 private Farmacia farmacia;
+@Join
 public Farmacia getFarmacia() {
 	return farmacia;
 }

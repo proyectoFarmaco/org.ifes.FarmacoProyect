@@ -1,11 +1,5 @@
 package repo.farmacia.login;
 
-
-
-
-
-
-
 import org.apache.isis.applib.AbstractFactoryAndRepository;
 import org.apache.isis.applib.annotation.Named;
 import org.apache.isis.applib.annotation.ActionSemantics;

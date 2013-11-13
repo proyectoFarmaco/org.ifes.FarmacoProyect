@@ -1,6 +1,7 @@
 package dom.farmacia;
 
 
+import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -19,7 +20,7 @@ public class Movimiento {
 
 	private Date fechaMovimiento;
 	private String concepMovimiento;
-	private float montoMovimiento;
+	private BigDecimal montoMovimiento;
 	private TipoMovimiento tipoMovimiento;
 	public TipoMovimiento getTipoMovimiento() {
 		return tipoMovimiento;
@@ -36,7 +37,7 @@ public class Movimiento {
 	}
 
 
-	public float getMontoMovimiento() {
+	public BigDecimal getMontoMovimiento() {
 		return montoMovimiento;
 	}
 	/**

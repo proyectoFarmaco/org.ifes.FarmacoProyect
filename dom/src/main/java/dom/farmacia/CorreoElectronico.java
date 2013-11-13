@@ -17,6 +17,9 @@ public class CorreoElectronico {
 
 	private String descripcion;
 	private String direccion;
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
 	public String getDescripcion() {
 		return descripcion;
 	}

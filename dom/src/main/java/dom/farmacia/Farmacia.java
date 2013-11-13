@@ -1,5 +1,6 @@
 package dom.farmacia;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 import javax.jdo.annotations.Join;
@@ -42,7 +43,7 @@ public class Farmacia {
     private String CUIT;
     private String IngBrutos;
     private String condIva;
-    private float saldo;
+    private BigDecimal saldo;
     private List<Drogueria> droguerias;
     private List<Movimiento> movimientos;
     private List<Telefono> telefono;
@@ -107,7 +108,7 @@ public class Farmacia {
 	public String getCondIva() {
 		return condIva;
 	}
-	public float getSaldo() {
+	public BigDecimal getSaldo() {
 		return saldo;
 	}
 	/**
