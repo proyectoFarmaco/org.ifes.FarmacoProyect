@@ -111,6 +111,7 @@ public class Farmacia {
 	public BigDecimal getSaldo() {
 		return saldo;
 	}
+	
 	/**
 	 * muestra en la GUI
 	 * como titulo el nombre de la farmacia
