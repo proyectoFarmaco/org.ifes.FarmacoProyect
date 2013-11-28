@@ -7,12 +7,7 @@ import org.apache.isis.applib.annotation.ObjectType;
 
 @javax.jdo.annotations.PersistenceCapable(identityType=IdentityType.DATASTORE)
 @ObjectType("CorreoElectronico")
-@javax.jdo.annotations.Queries({
-	@javax.jdo.annotations.Query(
-            name="nuevocorreo", language="JDOQL",  
-            value="INSERT INTO dom.farmacia.CorreoElectronico SET descripcion:=Descripcion,direccion:=Direccion"
-			)	
-})
+
 public class CorreoElectronico {
 
 	private String descripcion;
@@ -28,8 +23,13 @@ public class CorreoElectronico {
 	}
 
 	
-	@SuppressWarnings("unused")
-    private DomainObjectContainer container;
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+    @SuppressWarnings("unused")
+	private DomainObjectContainer container;
 
     public void setDomainObjectContainer(final DomainObjectContainer container) {
         this.container = container;

@@ -50,11 +50,13 @@ public class Farmacia {
     private List<CorreoElectronico> listaCorreoElectronico;
     
     
-    @Optional
+
+
+	@Optional
 	public List<CorreoElectronico> getListaCorreoElectronico() {
 		return listaCorreoElectronico;
 	}
-
+    
 	@Optional
 	public List<Telefono> getTelefono() {
 		return telefono;
@@ -67,7 +69,12 @@ public class Farmacia {
 	
 	public String nuevoCorreo(@Named("descripcion") String descripcion,@Named("mail")String mail)
 	{
-		return "Nuevo Correo añadido a la Farmacia";
+		final CorreoElectronico correo = container.newTransientInstance(CorreoElectronico.class);
+		correo.setDescripcion(descripcion);
+		correo.setDireccion(mail);
+		this.getListaCorreoElectronico().add(correo);
+		return "nuevo correo añadido";		
+		
 	}
 	
 	public void setMovimientos(List<Movimiento> movimientos) {
@@ -137,7 +144,7 @@ public class Farmacia {
 
 
 	
-	@SuppressWarnings("unused")
+
     private DomainObjectContainer container;
 
     public void setDomainObjectContainer(final DomainObjectContainer container) {
