@@ -137,10 +137,7 @@ public class Farmacia {
 	 * @return
 	 */
 
-	@Named("agregar nuevo mail a la farmacia")
-	public String agregarMail(final String nuevoMail) {
-        return nuevoMail;
-    }
+
 
 
 	
