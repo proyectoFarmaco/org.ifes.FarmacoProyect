@@ -24,6 +24,11 @@ public class Drogueria {
 		return codigoPostal;
 	}
 
+	/**
+	 * muestra en la GUI
+	 * como título el nombre de la Drogueria
+	 * @return nombre de la Drogueria
+	 */
 	public String title()
 	{
 		return this.nombre;

@@ -39,7 +39,7 @@ public class CorreoElectronico {
      * descripción de Correo Electronico de la farmacia
      * en la GUI 
      * 
-     * @return 
+     * @return descripcion del correo electronico
      */
     public String title()
     {

@@ -23,12 +23,21 @@ public class Telefono {
 		return numTelefono;
 	}
 	
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
 	@SuppressWarnings("unused")
     private DomainObjectContainer container;
 
     public void setDomainObjectContainer(final DomainObjectContainer container) {
         this.container = container;
     }
+    /**
+	 * muestra en la GUI
+	 * como título la descripción del telefono
+	 * @return descripcion del Telefono
+	 */
     public String title()
     {
     	return this.descripcion;

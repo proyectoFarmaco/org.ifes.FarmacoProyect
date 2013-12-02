@@ -66,7 +66,14 @@ public class Farmacia {
 	public List<Movimiento> getMovimientos() {
 		return movimientos;
 	}
-	
+
+	/**
+	 * crea nuevo correo electronico 
+	 * para la farmacia seleccionada
+	 * @param descripcion descripción del e-mail ejemplo e-mail particular
+	 * @param mail direccion de e-mail
+	 * @return
+	 */
 	public String nuevoCorreo(@Named("descripcion") String descripcion,@Named("mail")String mail)
 	{
 		final CorreoElectronico correo = container.newTransientInstance(CorreoElectronico.class);
@@ -76,6 +83,24 @@ public class Farmacia {
 		return "nuevo correo añadido";		
 		
 	}
+	/**
+	 * crea nuevo Telefono 
+	 * para la farmacia seleccionada
+	 * @param descripcion descripcion del telefono 
+	 * ejemplo telefono celular, telefono fijo, oficina ,etc
+	 * @param numTelefono
+	 * @return farmacia a la que se le asigno el telefono
+	 */
+	public Farmacia nuevoTelefono(@Named("descripcion") String descripcion,@Named("numero de telefono")String numTelefono)
+	{
+		final Telefono telefono = container.newTransientInstance(Telefono.class);
+		telefono.setNumTelefono(numTelefono);
+		telefono.setDescripcion(descripcion);
+		this.getTelefono().add(telefono);
+		return this;		
+		
+	}
+	
 	
 	public void setMovimientos(List<Movimiento> movimientos) {
 		this.movimientos = movimientos;
@@ -121,8 +146,8 @@ public class Farmacia {
 	
 	/**
 	 * muestra en la GUI
-	 * como titulo el nombre de la farmacia
-	 * @return
+	 * como título el nombre de la farmacia
+	 * @return nombre de la Farmacia
 	 */
 	
 	public String title()

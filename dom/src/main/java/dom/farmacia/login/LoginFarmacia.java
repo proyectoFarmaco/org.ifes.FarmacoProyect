@@ -3,7 +3,7 @@ package dom.farmacia.login;
 
 
 
-import javax.jdo.annotations.Embedded;
+
 import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
 
