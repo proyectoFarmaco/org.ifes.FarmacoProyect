@@ -3,6 +3,7 @@ package dom.farmacia;
 import javax.jdo.annotations.IdentityType;
 
 import org.apache.isis.applib.DomainObjectContainer;
+import org.apache.isis.applib.annotation.MaxLength;
 import org.apache.isis.applib.annotation.ObjectType;
 
 @javax.jdo.annotations.PersistenceCapable(identityType=IdentityType.DATASTORE)
@@ -11,18 +12,19 @@ public class Telefono {
 
 	private String descripcion;
 	private String numTelefono;
+	@MaxLength(20)
 	public String getDescripcion() {
 		return descripcion;
 	}
-	
+	@MaxLength(20)
 	public void setNumTelefono(String numTelefono) {
 		this.numTelefono = numTelefono;
 	}
-
+	@MaxLength(20)
 	public String getNumTelefono() {
 		return numTelefono;
 	}
-	
+	@MaxLength(20)
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}

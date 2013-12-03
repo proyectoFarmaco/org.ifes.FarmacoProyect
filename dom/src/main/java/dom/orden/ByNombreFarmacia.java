@@ -5,7 +5,7 @@ import java.util.Comparator;
 import dom.farmacia.Farmacia;
 
 
-public class ByCodFarmacia implements Comparator<Farmacia> {
+public class ByNombreFarmacia implements Comparator<Farmacia> {
 
 	@Override
 	public int compare(Farmacia arg0, Farmacia arg1) {

@@ -15,7 +15,7 @@ import org.apache.isis.applib.query.QueryDefault;
 
 
 import dom.farmacia.login.LoginFarmacia;
-import dom.orden.ByCodFarmacia;
+import dom.orden.ByNombreFarmacia;
 
 
 
@@ -51,7 +51,7 @@ public class RepoFarmacias extends AbstractFactoryAndRepository{
 	         if (currentUserName().equals("sven"))//Codigo duro (hardcoded) se debe hacer de otra forma
 	         {
 	         List<Farmacia> items = allMatches(new QueryDefault<Farmacia>(Farmacia.class,"traer_todas_las_farmacias"));
-	         Collections.sort(items,new ByCodFarmacia() );
+	         Collections.sort(items,new ByNombreFarmacia() );
 	         return items;
 	         }
 	         else
